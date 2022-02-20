@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>about.knit</title>
+
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.9.4.1/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="site_libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<div class = "containers nav-container">
+<nav> 
+        <ul>
+            <li class= "nav-item nav-home nav-other"><a href="index.html">Home</a></li>
+            <li class= "nav-item nav-about nav-other"><a href="about.html">About</a></li>
+            <li class= "nav-item nav-me"><a href="index.html">Cedric Lary</a></li>
+            <li class= "nav-item nav-projects nav-other"><a href="https://larylc.github.io/Independent-Projects-/index.html">Projects</a></li>
+            <li class= "nav-item nav-gallery nav-other"><a href="#">Gallery</a></li>
+        </ul>
+  </nav>
+</div>
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> <link id="theme-style" rel= "stylesheet" href="light.css"></p>
+<div class="containers theme-bar">
+<p class="theme-text">
+Couldn’t decide on a pallet, so you choose!
+</p>
+<div class="theme-holder">
+<div class="theme light" data-mode="light">
+
+</div>
+<div class="theme salmon" data-mode="salmon">
+
+</div>
+<div class="theme sea" data-mode="sea">
+
+</div>
+<div class="theme dark" data-mode="dark">
+
+</div>
+</div>
+</div>
+<div class="containers main2">
+<div class="section2">
+<div id="col1">
+<p><img  id= "img4" src="imgs/professional_pic.png"></p>
+</div>
+<div id="col2">
+<p>
+I started learning how to code while earning my BA in Biology and Education at Swarthmore College. While working as a private tutor, I took a more serious interest in data science and started building projects in R, Python, D3.js. Now, I spend most of my free time troubleshooting.
+</p>
+<div class="footer-icons">
+<p><a href="https://github.com/larylc"><i class="fab fa-github social2"></i></a> <a href="https://www.linkedin.com/in/cedric-lary-1281b01a2/"><i class="fab fa-linkedin social2"></i></a> <a href="https://larylc.github.io/Independent-Projects-/index.html"><i class="fas fa-link social2"></i></a></p>
+</div>
+<p class="arrow arrow2">
+﹀
+</p>
+</div>
+</div>
+</div>
+<div class= "containers main3">
+<div class= "section3">
+
+<div id="col3">
+<h2>
+Interests
+</h2>
+<div class="tags">
+<p><button class= "tag-button">Data Viz</button> <button class= "tag-button">Data Mining</button> <button class= "tag-button">Data Journalism</button> <button class= "tag-button">Front-End Development</button> <button class= "tag-button">Web-Scraping</button> <button class= "tag-button">Research</button> <button class= "tag-button">Education</button> <button class= "tag-button">Biology</button></p>
+</div>
+</div>
+<div id="col4">
+<h2>
+Skills
+</h2>
+<div id="htmlwidget-163e4bda095346f63820" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-163e4bda095346f63820">{"x":{"data":[{"x":[19023.6479675237,19023.9621098753,19023.8616814263,19023.8584133763,19024.2341394486,19024.8504800156,19026.3199915191,19026.9889079295],"y":[0.889971654675901,0.776511895656586,1.28347691074014,1.07519910801202,0.711860475502908,1.25369505062699,1.07316603008658,0.702547475136816],"text":["Feb-2022<br />Topics: DataCamp: dates and times, calculated fields, quick table calculations, and highlight actions","Feb-2022<br />Topics: DataCamp: geographic data, dates, reference lines, trend lines, and forcasting","Feb-2022<br />Topics: DataCamp: improving and formatting visualization","Feb-2022<br />Topics: DataCamp: loading, navigating, visualizing ","Feb-2022<br />Topics: DataCamp: sorting and filtering, aggregation, and calculated fields ","Feb-2022<br />Topics: DataCamp: bar charts, KPI charts, histograms with variable bin width, and filters","Feb-2022<br />Topics: DataCamp: improving geographic data with layers and density, customizing tooltips, and applying quick table calculations","Feb-2022<br />Topics: DataCamp: groups, sets, and parameters"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(15,125,107,1)","opacity":0.5,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(15,125,107,1)"}},"hoveron":"points","name":"Tableau","legendgroup":"Tableau","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18687.0492043395,18687.0738461668,18687.3197521802,18687.2571723808,18687.3419582721,18687.0948775228,18718.3313433226,18717.9205213644,18718.2419854291,18717.9174904615,18718.3046924537,18840.3581691165,18840.0210584773,18839.6446859427,18901.1370451709,18901.2545744766,18900.7019333065,18961.9668975586,18993.0882102739,18992.7933997361,19023.6724085741,19024.0092863876,19024.3099559499],"y":[2.11221087425947,1.85023594684899,2.39080562721938,2.04333065729588,1.71421268954873,1.65310754012316,1.83455975335091,2.338364074938,2.16536793801934,2.38069027140737,2.25788479465991,2.25371754970402,2.37718982957304,2.06017548255622,1.61093781795353,1.66858788505197,1.87483668643981,1.61186787411571,1.81621253360063,2.04027715232223,1.99999274797738,1.71313064154238,1.99526020791382],"text":["Mar-2021<br />Topics: Head First JavaScript: chapter 1 variables, expressions, control flow, loops","Mar-2021<br />Topics: Head First JavaScript: chapter 2 loops, control flow, logical and comparison operators","Mar-2021<br />Topics: Head First JavaScript: chapter 3 functions","Mar-2021<br />Topics: Head First JavaScript: chapter 4 arrays and loops","Mar-2021<br />Topics: Head First JavaScript: chapter 5 understanding objects","Mar-2021<br />Topics: Head First JavaScript: chapter 6 DOM","Apr-2021<br />Topics: first attempt at Full Stack D3 Masterclass module 1 line graph","Apr-2021<br />Topics: first attempt at Full Stack D3 Masterclass module 2 scatterplot","Apr-2021<br />Topics: first attempt at Full Stack D3 Masterclass module 3 histogram","Apr-2021<br />Topics: first attempt at Full Stack D3 Masterclass module 4 css transitions and animations","Apr-2021<br />Topics: first attempt at React","Aug-2021<br />Topics: first attempt at making bar chart","Aug-2021<br />Topics: review headfirst chapters 1-7","Aug-2021<br />Topics: review of  Full Stack D3 Masterclass module 1-3","Oct-2021<br />Topics: Head First JavaScript: chapter 7 primitives and equality operators","Oct-2021<br />Topics: Head First JavaScript: chapter 8 building app objects and chaining","Oct-2021<br />Topics: second attempt at barchart","Dec-2021<br />Topics: Head Frist Javascript: chapter 9 asynchronous coding and event handlers","Jan-2022<br />Topics: barcharts","Jan-2022<br />Topics: bubble charts, force simulations","Feb-2022<br />Topics: d3.transitions and interactions","Feb-2022<br />Topics: enter, exit, update pattern","Feb-2022<br />Topics: ScrollMagic library"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(250,248,168,1)","opacity":0.5,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(250,248,168,1)"}},"hoveron":"points","name":"D3.js and JavaScript","legendgroup":"D3.js and JavaScript","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18628.0964479078,18628.0218545081,18718.3115658291,18901.1363338176,18901.336428941,18900.9656502379,18900.8796873942,18901.1013924785,18901.0723737247,18932.2214333061,18992.9470010363,19024.0056446074],"y":[2.62853021156043,3.24897546712309,3.18031183015555,2.63551175240427,3.3839873239398,3.09937956351787,3.10434604007751,3.38358715418726,3.20503387823701,2.71603266894817,3.34360778648406,2.87495601139963],"text":["Jan-2021<br />Topics: basics: set up, tags, and styles ","Jan-2021<br />Topics: practice website","Apr-2021<br />Topics: introduction to svgs","Oct-2021<br />Topics: advanced css selectors","Oct-2021<br />Topics: flexbox css","Oct-2021<br />Topics: parallax","Oct-2021<br />Topics: responsive website design","Oct-2021<br />Topics: review of basics","Oct-2021<br />Topics: sass","Nov-2021<br />Topics: updating project website","Jan-2022<br />Topics: data viz website","Feb-2022<br />Topics: css transitions"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(64,203,236,1)","opacity":0.5,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(64,203,236,1)"}},"hoveron":"points","name":"HTML and CSS","legendgroup":"HTML and CSS","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18443.6832373984,18443.7672783567,18444.1494146714,18686.7854416542,18687.2855303269,18747.6202181453,18748.1415378934,18748.1851924226,18748.3505601333,18747.6124879712,18747.8943886509,18747.8874470806,18747.6808045726,18747.7748314038,18747.7904232727],"y":[3.977593828924,3.9360399601981,4.31797696258873,4.12299480196089,4.00867499001324,3.68381698001176,4.08069619461894,3.90362803563476,3.88808398079127,3.76650764513761,4.35385291371495,3.81469224952161,4.08170654568821,4.0747861597687,3.89252774789929],"text":["Jul-2020<br />Topics: data manipulation","Jul-2020<br />Topics: functions basics","Jul-2020<br />Topics: gathering data for pokemon exploration project","Mar-2021<br />Topics: DataCamp: conditional and lookup functions","Mar-2021<br />Topics: DataCamp: predefined functions","May-2021<br />Topics: conditional functions and lookups","May-2021<br />Topics: DataCamp: advanced options for pivot tables","May-2021<br />Topics: DataCamp: analyzing pivot tables","May-2021<br />Topics: DataCamp: cell addresses, advanced matching, sorting, filtering, and simple imputation","May-2021<br />Topics: DataCamp: data transformations and generating random numbers","May-2021<br />Topics: DataCamp: data types","May-2021<br />Topics: DataCamp: introduction to pivot tables","May-2021<br />Topics: DataCamp: logic and errors","May-2021<br />Topics: DataCamp: modifying data in pivot tables and troubleshooting issues","May-2021<br />Topics: predefined functions"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(70,214,159,1)","opacity":0.5,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(70,214,159,1)"}},"hoveron":"points","name":"Google Sheets/Excel","legendgroup":"Google Sheets/Excel","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18597.1397515545,18596.6892217612,18596.8085948402,18597.3259949883,18596.8561874539,18596.6955230212,18597.0391563641,18596.6705758385,18687.2198708495,18686.8376370268,18686.9040118253,18687.2819406038,18686.7773052158],"y":[4.85377095583826,5.27791608590633,4.68724847733974,5.22958041597158,5.0444150287658,5.32198489699513,4.83005820959806,4.9971838073805,4.65273464526981,5.35377348214388,5.08377791773528,5.27932401504368,5.16843456439674],"text":["Dec-2020<br />Topics: DataCamp: aggregate functions","Dec-2020<br />Topics: DataCamp: data consistency and attribute constraints","Dec-2020<br />Topics: DataCamp: filtering rows","Dec-2020<br />Topics: DataCamp: introduction to relational databases","Dec-2020<br />Topics: DataCamp: joining tables using foreign keys","Dec-2020<br />Topics: DataCamp: primary and foreign keys","Dec-2020<br />Topics: DataCamp: selecting and summarizing columns","Dec-2020<br />Topics: DataCamp: sorting and grouping","Mar-2021<br />Topics: DataCamp: inner joins and self joins","Mar-2021<br />Topics: DataCamp: outer and cross joins","Mar-2021<br />Topics: DataCamp: reviewing relational databases concepts","Mar-2021<br />Topics: DataCamp: set theory clauses","Mar-2021<br />Topics: DataCamp: subqueries"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(185,172,234,1)","opacity":0.5,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(185,172,234,1)"}},"hoveron":"points","name":"SQL","legendgroup":"SQL","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18444.3382099515,18443.9542919161,18444.3521674987,18444.0383395141,18444.1536476763,18443.9581934113,18444.3803588899,18443.7691266505,18443.7487177888,18444.269293246,18443.7019599153,18444.2611573044,18443.8214811374,18535.9310420195,18536.1841455162,18535.7871281542,18535.836608384,18535.988825926,18536.2826288594,18536.0067892427,18535.6282150809,18536.3182459438,18536.1165727969,18536.0191160055,18567.2278200461,18567.3549239749,18567.0356635675,18567.3347656192,18566.6982522201,18567.0890629776,18567.0587222742,18567.1319894413,18567.0408093361,18566.9089082075,18566.8952580635,18567.0830971187,18566.6604919797,18566.6813718854,18597.3933234669,18597.2861308051,18596.8002803562,18597.3017539039,18597.1594517885,18596.9836043898,18596.8530028336,18597.242383397,18597.1929985246,18597.3462549832,18596.7563865688,18596.8021200741,18596.821862747,18597.2679659806,18596.6543511381,18628.0462368324,18627.6713130547,18628.2880311955,18628.257001647,18627.8363790829,18659.3785833994,18659.3441907775,18658.7784609538,18658.9652626408,18686.7521293515,18687.1005748412,18686.8014903028,18686.996935752,18717.9594845528,18747.9652533645,18748.3430280147,18839.903190602,18839.8778006637,18870.6761052262,18871.2496203782,18932.1390427396],"y":[5.85861374698579,5.93788877297193,5.90325511787087,6.23019845243543,5.60576317366213,5.67533382326364,6.0199695719406,6.26540903188288,6.08030743300915,6.0672868186608,6.092528754659,5.80938529521227,5.90006794873625,5.84932830892503,5.82312620934099,6.22397011034191,5.89121976066381,5.64492048025131,6.07076994497329,5.7668494399637,6.20700119771063,5.98821239117533,6.36697258688509,6.04400030262768,5.85255297273397,6.37699268143624,6.29512650109828,6.37056016866118,6.18378444034606,5.7878561258316,5.76105970274657,6.03317269328982,6.25279037170112,6.35212611779571,5.72113710641861,5.69812525752932,6.0184713114053,5.86100963056087,5.90458014942706,5.99983248524368,5.97675395477563,5.68834646660835,5.98689838461578,5.92436149604619,5.80741523578763,5.69900281541049,6.3347883341834,5.81442560981959,5.73233518525958,5.77847407571971,6.109229490906,5.89761403724551,6.15329279918224,6.38992523234338,6.25007981155068,6.17969459146261,6.38576986510307,5.8821015862748,5.96096287742257,5.89378622844815,6.39795026257634,6.18341577164829,5.78069655057043,6.35952258277684,5.6801448315382,5.73969801440835,5.66472051981837,5.76432886812836,5.97680901773274,5.92111822422594,5.61778570320457,5.67192359920591,6.2537377839908,6.0609856730327],"text":["Jul-2020<br />Topics: classes and objects basics","Jul-2020<br />Topics: control flow basics","Jul-2020<br />Topics: dictionaries basics","Jul-2020<br />Topics: functions basics","Jul-2020<br />Topics: inheritance basics","Jul-2020<br />Topics: list functions basics","Jul-2020<br />Topics: lists basics","Jul-2020<br />Topics: modules and pip basics","Jul-2020<br />Topics: object functions basics","Jul-2020<br />Topics: reading and writing files basics","Jul-2020<br />Topics: return statements basics","Jul-2020<br />Topics: tuples basics","Jul-2020<br />Topics: variables and data types basics","Oct-2020<br />Topics: DataCamp: basic plots","Oct-2020<br />Topics: DataCamp: data types","Oct-2020<br />Topics: DataCamp: dictionaries and pandas","Oct-2020<br />Topics: DataCamp: functions basics","Oct-2020<br />Topics: DataCamp: importing python modules","Oct-2020<br />Topics: DataCamp: logic, control flow, and filtering","Oct-2020<br />Topics: DataCamp: loops","Oct-2020<br />Topics: DataCamp: matplotlib module basics","Oct-2020<br />Topics: DataCamp: numpy library","Oct-2020<br />Topics: DataCamp: pandas library basics","Oct-2020<br />Topics: DataCamp: reading data","Nov-2020<br />Topics: DataCamp: advanced merging and concatenation","Nov-2020<br />Topics: DataCamp: importing data from web and BeautifulSoup","Nov-2020<br />Topics: DataCamp: intro data visualization matplotlib","Nov-2020<br />Topics: DataCamp: intro data visualization seaborn","Nov-2020<br />Topics: DataCamp: intro to importing excel, stata, sas, matlab","Nov-2020<br />Topics: DataCamp: intro to working with relational databases","Nov-2020<br />Topics: DataCamp: merging ordered and times series data","Nov-2020<br />Topics: DataCamp: merging tables and join types","Nov-2020<br />Topics: DataCamp: missing value basics","Nov-2020<br />Topics: DataCamp: reading and writing csvs","Nov-2020<br />Topics: DataCamp: subsetting and indexing dataframes","Nov-2020<br />Topics: DataCamp: summary statistics and pivot tables","Nov-2020<br />Topics: DataCamp: transforming dataframes","Nov-2020<br />Topics: DataCamp: working with APIs and JSONs","Dec-2020<br />Topics: DataCamp: cleaning categorical and text data","Dec-2020<br />Topics: DataCamp: data manipulation review and assessment","Dec-2020<br />Topics: DataCamp: data types, range constraints, duplicates","Dec-2020<br />Topics: DataCamp: data visualization matplotlib","Dec-2020<br />Topics: DataCamp: importing data from databases","Dec-2020<br />Topics: DataCamp: importing flat and excel files","Dec-2020<br />Topics: DataCamp: importing JSON Data and working with APIs","Dec-2020<br />Topics: DataCamp: multiple regression and logistic regression","Dec-2020<br />Topics: DataCamp: preparing data for analysis pandas","Dec-2020<br />Topics: DataCamp: programming assessment","Dec-2020<br />Topics: DataCamp: read, clean, and validate data","Dec-2020<br />Topics: DataCamp: record linkage","Dec-2020<br />Topics: DataCamp: regression modeling","Dec-2020<br />Topics: DataCamp: representing distributions with PMFs and CDFs","Dec-2020<br />Topics: DataCamp: uniformity and missing data","Jan-2021<br />Topics: DataCamp: css locators, chaining, responses","Jan-2021<br />Topics: DataCamp: highlighting data and annotating graphs","Jan-2021<br />Topics: DataCamp: html and xpath introduction","Jan-2021<br />Topics: DataCamp: web crawlers","Jan-2021<br />Topics: DataCamp: xpath and scrapy selectors","Feb-2021<br />Topics: DataCamp: choosing color palettes","Feb-2021<br />Topics: DataCamp: reviewing data manipulation","Feb-2021<br />Topics: DataCamp: reviewing importing data","Feb-2021<br />Topics: DataCamp: reviewing joining","Mar-2021<br />Topics: data camp: exploratory data analysis","Mar-2021<br />Topics: DataCamp: web scraping review","Mar-2021<br />Topics: matplotlib Seaborn","Mar-2021<br />Topics: pandas and matplotlib","Apr-2021<br />Topics: DataCamp: basics of relational databases","May-2021<br />Topics: pandas library","May-2021<br />Topics: web scraping using Selenium, BeautifulSoup, scrapy ","Aug-2021<br />Topics: data manipulation pandas","Aug-2021<br />Topics: web scraping with BeautifulSoup, requests, googlesearch, scrapy","Sep-2021<br />Topics: data manipulation pandas and regular expressions with re","Sep-2021<br />Topics: web scraping with BeautifulSoup, requests, googlesearch, scrapy","Nov-2021<br />Topics: web scraping with BeautifulSoup, requests, scrapy"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(255,205,45,1)","opacity":0.5,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(255,205,45,1)"}},"hoveron":"points","name":"Python","legendgroup":"Python","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18414.3303241184,18414.2593382778,18414.347997167,18414.1007728068,18413.6797085347,18413.9628311526,18413.7581646563,18414.2013765248,18414.1389378093,18413.8385659566,18414.0712714132,18414.0193097752,18413.8284435244,18413.6108802784,18414.2813064022,18414.0107050605,18413.837835872,18414.0835871665,18443.8479793359,18443.6077197038,18444.1347237112,18443.7951811066,18443.6262462975,18444.3751744475,18443.9835834047,18444.2772519019,18475.3554413598,18475.1974262314,18474.758744457,18475.0219614618,18474.7273134822,18506.1090783045,18505.8391443258,18506.0860328909,18506.3132898193,18505.7283917639,18535.9177100351,18536.1879188847,18535.8699408337,18535.6827219041,18536.043699402,18535.7769643718,18536.2800090993,18536.3284378536,18535.993480826,18535.8804495029,18566.7265286338,18567.0361003226,18566.8849894337,18567.1155447798,18567.013545634,18566.9405406715,18567.1467929432,18566.6411962537,18567.3676609358,18567.0565377628,18567.2675963759,18566.7983444802,18566.851280432,18566.7128069669,18567.0439055944,18566.7777247574,18596.6040458154,18596.775665671,18596.6983024191,18596.7336023023,18597.0836679045,18628.1605957584,18627.9945943892,18627.7885718254,18659.2098167041,18658.8845833961,18659.3633086009,18659.3526477726,18658.6159521978,18687.1048704034,18687.2760377569,18686.7697941868,18686.9071381105,18687.0554104598,18687.0924561054,18687.340944208,18686.8994625041,18686.7789513096,18686.9481277801,18686.83893466,18686.6268978499,18686.8708647005,18687.2563118242,18687.3543539278,18718.1970469629,18717.7567189267,18717.6404898966,18718.0437704528,18718.2989010079,18718.2266171174,18717.858182789,18718.1378032085,18718.2972023537,18717.9818558386,18718.3907874268,18717.904373383,18718.0155403817,18747.8346724451,18747.908736095,18747.7157283936,18748.2531449256,18747.6744016416,18747.7572628668,18748.329993725,18748.2776483785,18779.2478590712,18778.7863262467,18779.2257234659,18809.0035484377,18809.0696397411,18808.6275884164,18839.6979393866,18840.1279516526,18840.0036285222,18870.8791956596,18871.0928590914,18870.9311014727,18870.6054399686,18871.0804849003,18870.6257793598,18871.1148646602,18901.3102499355,18900.9913964173,18900.8323990624,18932.1595126467,18992.9712599991,18993.2718742028,18993.3128273016,18992.8501926225,18992.8006239576],"y":[6.94649503193796,7.35339295752347,7.15426896139979,7.26590693276376,7.06127808354795,7.08728028293699,7.15873835179955,7.332778820768,7.00031379219145,6.87127609457821,6.99161299876869,7.02412829492241,7.00644734855741,7.24627799876034,6.9990751164034,6.60680039580911,6.73908517863601,7.34802328310907,7.20509929209948,7.18373334724456,7.12246797699481,7.34041173569858,6.89285296797752,6.90729688536376,6.60152205750346,7.0835199078545,6.66577182170004,6.95220729000866,7.05761195812374,7.07983045615256,7.01345257889479,7.01267545614392,6.7727805737406,6.88749624211341,7.37972717639059,6.73121410980821,6.89968541990966,7.02421864233911,7.04128042068332,6.66973569989204,6.99873886816204,6.67862296272069,7.27100720964372,6.99192268420011,6.79708306323737,6.71478222198784,7.0301268402487,6.6397633081302,6.78132816646248,7.07279607616365,6.63068008068949,7.03708451725543,6.87317078914493,7.17419087868184,6.92559103611857,7.3406854685396,6.89138310458511,7.06057651937008,7.20045374613255,6.68628758713603,7.16110655590892,7.31289820168167,6.62318867594004,6.87458973992616,6.85316908359528,6.74316831436008,6.72650125771761,6.8360846336931,6.76160961575806,6.61801463793963,7.24566305894405,7.17292800322175,7.03220105394721,6.60155295263976,7.15366084761918,6.93959631957114,7.07412263881415,7.19036301076412,6.80724565386772,7.30384226646274,7.09869916047901,7.24773477967828,6.84192611593753,7.0047812236473,6.98736785762012,7.00688858292997,7.25886610485613,6.73622705955058,6.97851678580046,6.88169667106122,6.86318757329136,6.90288037899882,6.82242954298854,7.07039326224476,6.76965925917029,6.88125710226595,6.62305673584342,7.01453932374716,7.02176512256265,6.78965355828404,7.39812607616186,6.63477715793997,7.11559142544866,7.02493584305048,7.32580335047096,7.11786720119417,7.34110283218324,7.11637039370835,7.04988346304745,6.8639302669093,7.03846090063453,6.9983058815822,7.08622353300452,7.31715088374913,6.80925121922046,7.06384999006987,7.03367665652186,6.68355108555406,7.05117664802819,7.19194267410785,7.09288971778005,6.85419895797968,7.36566010527313,7.22633945383132,7.31175765898079,6.6453212890774,7.3115649798885,6.96007173191756,6.83995128944516,7.20894583854824,6.62214001957327,7.37727058697492,7.10563934631646,7.39780342075974,7.26153959780931,6.65119583494961],"text":["Jun-2020<br />Topics: ANOVA statistical modeling","Jun-2020<br />Topics: basic data reshaping with tidyr","Jun-2020<br />Topics: basic data wrangling with dplyr","Jun-2020<br />Topics: calculating leverage and Cook's distance","Jun-2020<br />Topics: checking model assumptions","Jun-2020<br />Topics: customizing graphs","Jun-2020<br />Topics: ggplot bivariate graphs","Jun-2020<br />Topics: ggplot multivariate graphs","Jun-2020<br />Topics: ggplot time-dependent graphs","Jun-2020<br />Topics: ggplot univariate graphs","Jun-2020<br />Topics: importing data","Jun-2020<br />Topics: logistic regression model","Jun-2020<br />Topics: miscellaneous graphs: heat maps, radar charts, flow diagrams","Jun-2020<br />Topics: pipes","Jun-2020<br />Topics: principal component analysis","Jun-2020<br />Topics: r markdown basics","Jun-2020<br />Topics: regression statistical modeling","Jun-2020<br />Topics: spine and mosaic plots","Jul-2020<br />Topics: customizing graphs","Jul-2020<br />Topics: importing fonts","Jul-2020<br />Topics: missing values","Jul-2020<br />Topics: more dplyr functions","Jul-2020<br />Topics: mosaic plots","Jul-2020<br />Topics: multiple regressions visreg package","Jul-2020<br />Topics: r markdown basics","Jul-2020<br />Topics: treemap","Aug-2020<br />Topics: biplots","Aug-2020<br />Topics: checking model assumptions","Aug-2020<br />Topics: customizing graphs","Aug-2020<br />Topics: multiple regression statistical modeling","Aug-2020<br />Topics: PCA","Sep-2020<br />Topics: factoextra package","Sep-2020<br />Topics: multiple logistic regression modeling","Sep-2020<br />Topics: R markdown themes and knitr package","Sep-2020<br />Topics: vcd package","Sep-2020<br />Topics: visreg package","Oct-2020<br />Topics: DataCamp:  the apply function family","Oct-2020<br />Topics: DataCamp: conditionals and control flow","Oct-2020<br />Topics: DataCamp: data types","Oct-2020<br />Topics: DataCamp: dates and time basics","Oct-2020<br />Topics: DataCamp: dplyr review","Oct-2020<br />Topics: DataCamp: function basics","Oct-2020<br />Topics: DataCamp: ggplot review","Oct-2020<br />Topics: DataCamp: grepl & grep basics","Oct-2020<br />Topics: DataCamp: loops","Oct-2020<br />Topics: DataCamp: sub & gsub basics","Nov-2020<br />Topics: DataCamp: cleaning categorical and text data","Nov-2020<br />Topics: DataCamp: concatenating and reshaping data.tables","Nov-2020<br />Topics: DataCamp: correlation and regression modeling","Nov-2020<br />Topics: DataCamp: data manipulation with data.table package","Nov-2020<br />Topics: DataCamp: data types, range constraints, duplicates","Nov-2020<br />Topics: DataCamp: diagnosing and fixing join problems","Nov-2020<br />Topics: DataCamp: exploratory data analysis","Nov-2020<br />Topics: DataCamp: ggplot review","Nov-2020<br />Topics: DataCamp: importing different file types","Nov-2020<br />Topics: DataCamp: joining multiple data.tables","Nov-2020<br />Topics: DataCamp: joins using data.table syntax","Nov-2020<br />Topics: DataCamp: manipulating factor variables forcats, stringr, dplyr, tidyr","Nov-2020<br />Topics: DataCamp: mutating joins and filtering joins dplyr","Nov-2020<br />Topics: DataCamp: record linkage","Nov-2020<br />Topics: DataCamp: tidy modeling with tidyr, purr, and broom packages","Nov-2020<br />Topics: DataCamp: uniformity and missing data","Dec-2020<br />Topics: DataCamp: cleaning data review","Dec-2020<br />Topics: DataCamp: conditional statements, loops, and functions review ","Dec-2020<br />Topics: DataCamp: data.table review","Dec-2020<br />Topics: DataCamp: importing data review","Dec-2020<br />Topics: DataCamp: tidyverse review","Jan-2021<br />Topics: DataCamp: customizing RMarkdown","Jan-2021<br />Topics: DataCamp: ggplot custom themes","Jan-2021<br />Topics: DataCamp: introduction to Shiny","Feb-2021<br />Topics: DataCamp: reactivity in shiny","Feb-2021<br />Topics: DataCamp: reviewing data manipulation","Feb-2021<br />Topics: DataCamp: reviewing importing data","Feb-2021<br />Topics: DataCamp: reviewing joining","Feb-2021<br />Topics: DataCamp: shiny inputs, outputs, and layouts","Mar-2021<br />Topics: DataCamp: building Shiny Apps","Mar-2021<br />Topics: DataCamp: customizing R Markdown","Mar-2021<br />Topics: DataCamp: intro to dates and times lubridate","Mar-2021<br />Topics: DataCamp: reviewing  and visualizing confidence intervals","Mar-2021<br />Topics: DataCamp: reviewing data cleaning","Mar-2021<br />Topics: DataCamp: reviewing data visualization ggplot","Mar-2021<br />Topics: DataCamp: reviewing joining data","Mar-2021<br />Topics: DataCamp: reviewing shiny fundamentals","Mar-2021<br />Topics: ggplot2","Mar-2021<br />Topics: ggthemes and shinythemes","Mar-2021<br />Topics: R Markdown and knitr","Mar-2021<br />Topics: reviewing and practicing functions","Mar-2021<br />Topics: Shiny","Mar-2021<br />Topics: string manipulation stringr","Mar-2021<br />Topics: tidyverse","Apr-2021<br />Topics: creating radar charts using ggradar, ggradar2, fmsb, ggiraph","Apr-2021<br />Topics: DataCamp: assessing model fit, outliers, leverage and influence","Apr-2021<br />Topics: DataCamp: correlation and experimental design","Apr-2021<br />Topics: DataCamp: distributions and central limit theorem","Apr-2021<br />Topics: DataCamp: interactions","Apr-2021<br />Topics: DataCamp: multiple linear regression modeling","Apr-2021<br />Topics: DataCamp: multiple logistic regression modeling","Apr-2021<br />Topics: DataCamp: parallel slopes","Apr-2021<br />Topics: DataCamp: predictions and model objects with broom library","Apr-2021<br />Topics: DataCamp: random numbers and probability","Apr-2021<br />Topics: DataCamp: simple linear regression","Apr-2021<br />Topics: DataCamp: simple logistic regression","Apr-2021<br />Topics: DataCamp: summary statistics","May-2021<br />Topics: advanced charts in plotly","May-2021<br />Topics: case study with plotly","May-2021<br />Topics: groups, layers, and extras leaflet","May-2021<br />Topics: introduction to plotly","May-2021<br />Topics: plotting points leaflet","May-2021<br />Topics: plotting polygons leaflet","May-2021<br />Topics: setting up interactive maps using leaflet package","May-2021<br />Topics: styling and customizing your graphics in plotly","Jun-2021<br />Topics: data manipulation with dplyr, tidyr, forcats, and data.table","Jun-2021<br />Topics: data visualization with leaflet, htmltools, plotly, visdat, vcd, and visreg","Jun-2021<br />Topics: logistic regression modeling with broom","Jul-2021<br />Topics: data manipulation with dplyr, tidyr, forcats, and data.table","Jul-2021<br />Topics: data visualization with leaflet, htmltools, plotly, visdat, vcd, and visreg","Jul-2021<br />Topics: logistic regression modeling with broom","Aug-2021<br />Topics: data manipulation with tidyverse, stringdist, and data.table","Aug-2021<br />Topics: joining data using fuzzyjoin","Aug-2021<br />Topics: multilingual R Markdown with reticulate","Sep-2021<br />Topics: building website with blogdown","Sep-2021<br />Topics: calendar heatmap ggplot, ggplotly, tidyverse","Sep-2021<br />Topics: data manipulation with tidyverse, stringdist, lubridate, and data.table","Sep-2021<br />Topics: highcharter package","Sep-2021<br />Topics: joining data using fuzzyjoin","Sep-2021<br />Topics: multilingual R Markdown with reticulate","Sep-2021<br />Topics: shiny and shinythemes","Oct-2021<br />Topics: ggplotly","Oct-2021<br />Topics: lubridate and tidyverse","Oct-2021<br />Topics: waffle package","Nov-2021<br />Topics: tidyverse and data.table","Jan-2022<br />Topics: DataCamp: sentiment analysis","Jan-2022<br />Topics: DataCamp: tokenizing, cleaning, and analyzing text data with tidytext ","Jan-2022<br />Topics: DataCamp: topic modeling with topicmodels package","Jan-2022<br />Topics: DataCamp: visualizing text data with ggplot and wordcloud","Jan-2022<br />Topics: tidyverse and data.table and ggplot"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(185,212,237,1)","opacity":0.5,"size":5.66929133858268,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(185,212,237,1)"}},"hoveron":"points","name":"R","legendgroup":"R","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.7625570776256,"r":7.30593607305936,"b":21.8513906185139,"l":90.6600249066003},"font":{"color":"rgba(0,0,0,1)","family":"Libre Baskerville","size":14.6118721461187},"title":{"text":"Topics Covered During Data Science Journey","font":{"color":"rgba(0,0,0,1)","family":"Libre Baskerville","size":17.5342465753425},"x":0.5,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[18382.9419788959,19057.6578093121],"tickmode":"array","ticktext":["Jun-2020","Aug-2020","Oct-2020","Dec-2020","Feb-2021","Apr-2021","Jun-2021","Aug-2021","Oct-2021","Dec-2021","Feb-2022"],"tickvals":[18414,18475,18536,18597,18659,18718,18779,18840,18901,18962,19024],"categoryorder":"array","categoryarray":["Jun-2020","Aug-2020","Oct-2020","Dec-2020","Feb-2021","Apr-2021","Jun-2021","Aug-2021","Oct-2021","Dec-2021","Feb-2022"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"Libre Baskerville","size":7.97011207970112},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,7.6],"tickmode":"array","ticktext":["Tableau","D3.js and JavaScript","HTML and CSS","Google Sheets/Excel","SQL","Python","R"],"tickvals":[1,2,3,4,5,6,7],"categoryorder":"array","categoryarray":["Tableau","D3.js and JavaScript","HTML and CSS","Google Sheets/Excel","SQL","Python","R"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"Libre Baskerville","size":7.97011207970112},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Libre Baskerville","size":11.689497716895}},"hovermode":"closest","barmode":"relative","annotations":[{"x":1,"y":-0.08,"text":"Source: Courtesy of My Browsing History","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":7,"color":"darkslategrey"}},{"x":1,"y":-0.08,"text":"Source: Courtesy of My Browsing History","showarrow":false,"xref":"paper","yref":"paper","xanchor":"right","yanchor":"auto","xshift":0,"yshift":0,"font":{"size":7,"color":"darkslategrey"}}]},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"844036824ee8":{"x":{},"y":{},"colour":{},"text":{},"type":"scatter"}},"cur_data":"844036824ee8","visdat":{"844036824ee8":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p class="arrow arrow3">
+﹀
+</p>
+</div>
+<div id = "col5">
+<h2>
+Resume
+<h2>
+</div>
+<p><embed src="C:\Users\laryl\Documents\larycedric\imgs\resume.pdf" id="pdf" style="width:50.0%" height="600" /> <!--<iframe src="imgs/resume.pdf#toolbar=0" width="500" height="500"></iframe>
+<a href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>--></p>
+</div>
+</div>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./script.js"></script>
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<div class = "containers footer-container">
+  <div class= "footer"> 
+    <h2>Contact</h2>
+    <p>You can find me here: </p>
+    <div class= "footer-icons">
+      <a href="https://github.com/larylc"><i class="fab fa-github social"></i></a>
+      <a href="https://www.linkedin.com/in/cedric-lary-1281b01a2/"><i class="fab fa-linkedin social"></i></a>
+      <a href="https://larylc.github.io/Independent-Projects-/index.html"><i class="fas fa-link social"></i></a>
+    </div>
+      <p>This website was made using RMarkdown.</p>
+  </div>
+</div>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

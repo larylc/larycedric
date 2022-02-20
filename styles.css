@@ -1,0 +1,554 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:wght@700&display=swap');
+
+/*---------------
+Variables 
+------------------*/
+:root {
+  --primary-color: #0396A5;
+  --secondary-color: #F2F2F2;
+  --nav-color: #fff;
+  --block-color: #CCC;
+  --text-primary-color: #000;
+  --graph-text-color: #000;
+}
+
+
+/*---------------
+Layout
+------------------*/
+
+.section {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+  margin: 0;
+}
+body { 
+  margin: 0;
+}
+
+#about-section {
+  background-color: var(--secondary-color);
+  height: 500px;
+}
+
+#project-section {
+  background-color: var(--nav-color);
+  height: 600px;
+}
+
+
+img {
+  width: 300px;
+}
+
+#img1:hover, #img2:hover, #img3:hover  {
+  transform: scale(1.25);
+  transition: all 1s ease-in-out;
+}
+
+#img4 {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+
+html{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-container{
+  max-width: 100% !important;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.containers {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0; 
+  overflow: hidden;
+
+}
+
+.c1 {
+  background-color: var(--secondary-color) ;
+  height: 550px;
+}
+.c2 {
+  background-color: var(--nav-color) ;
+  height: 700px;
+}
+
+
+
+.main2 {
+  background-color: var(--secondary-color) ;
+  height: 300px;
+}
+.main3 {
+  background-color: var(--nav-color) ;
+  height: 1700px;
+}
+
+.section2 {
+  margin: 0 auto;
+  max-width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2px;
+  background-color: var(--secondary-color);
+}
+
+.section3 {
+  margin: 0 auto;
+  width: 75%;
+  display: grid;
+  grid-template-rows: 250px;
+  background-color: var(--nav-color);
+}
+
+#col3{
+  height: 300px;
+  width:100%;
+}
+
+.container-fluid {
+  background-color: var(--nav-color)
+}
+
+
+#col2 p {
+  position: relative;
+  top: 30px;
+}
+
+
+#pdf {
+  margin: 0 auto;
+}
+/*---------------
+Data Viz
+------------------*/
+@keyframes change-color{
+  from {background-color: var(--block-color);}
+  to {background-color: var(--primary-color);}
+}
+
+@keyframes reverse-color{
+  from {background-color: var(--primary-color);}
+  to {background-color: var(--block-color);}
+}
+
+.block:hover {
+  animation-name: change-color ;
+  animation-duration: 1s;
+  animation-iteration-count:1;
+}
+
+.waffle {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.block {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  animation-name: reverse-color;
+  animation-duration: 4s;
+  background-color: var(--block-color);
+
+}
+
+.main-svg {
+    background: none ;
+}
+
+
+.js-plotly-plot .plotly .main-svg {
+  left: 20%;
+  background:  transparent !important;
+}
+
+
+
+.xtick text {
+  fill: var(--graph-text-color) !important}
+  
+.g-gtitle text {
+  fill: var(--graph-text-color) !important;
+  
+} 
+.ytick text {
+  fill: var(--graph-text-color) !important; 
+  
+}
+
+
+/*---------------
+Typography
+------------------*/
+
+* {
+  font-family: 'Libre Baskerville','Baskervville', 'Cambria', serif;
+  color: var(--text-primary-color);
+  
+}
+
+p {
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  bottom: 175px;
+  font-weight: 700;
+  z-index: 5;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+/*
+.paragraph2, .paragraph3 {
+  position: relative;
+  top: 80px;
+  font-weight: 700;
+  z-index: 10;
+  
+}  
+
+.text:hover {
+  opacity: 0.15;
+  transition: all 1s ease-in-out;
+  
+}*/
+
+form {
+  margin: 0 40%;
+  position: relative;
+  bottom: 60px;
+}
+
+.footer-container h2 {
+  padding-top: 15px;
+}
+
+/*---------------
+Navigation
+------------------*/
+
+
+.nav-container {
+  background-color: var(--nav-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+
+
+}
+
+nav {
+    padding: 1.5em 0;
+    background-color: var(--nav-color);
+    max-width: 75%;
+    margin: 0 auto
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 1em;
+    padding: 5px 8px;
+  
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+nav a:hover{
+      text-decoration: none;
+      color: var(--primary-color);
+
+
+}
+
+.nav-me a {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.nav-other::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.nav-other:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/*---------------
+Footer
+------------------*/
+
+
+.footer-container {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 200px;
+
+}
+
+
+
+.footer{
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: var(--primary-color);}
+
+
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social {
+  background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px;
+  
+}
+
+.social2 {
+  background-color: #333;
+    border-radius: 60px;
+    color: #fff;
+    display: inline-block;
+    height: 60px;
+    margin: auto 6px;
+    width: 60px;
+    font-size: 30px;
+    text-align: center;
+    padding: 16px;
+}
+
+
+.social:hover{
+    background-color: var(--secondary-color);
+}
+
+.social2:hover{
+    background-color: var(--primary-color);
+}
+
+
+/*---------------
+Styles 
+------------------*/
+
+
+.learn{
+  color: var(--primary-color);
+  background-color: #fff;
+  border: solid 2px var(--primary-color);
+  border-radius: 5%;
+}
+
+
+.learn:hover {
+  transition: all 0.25s ease-in-out;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: 3px solid #fff;
+  
+}
+
+.tag-button {
+  color:  #fff;
+  background-color: var(--primary-color);
+  margin: 0 2px;
+  border: solid 1px  #fff;
+  border-radius: 5%;
+
+}
+
+.tag-button:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+    border: solid 1px  var(--primary-color);
+}
+
+.tags p {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+}
+
+
+@keyframes pointing{
+  from {top: 0px}
+  to {top: 4px}
+}
+
+
+.arrow {
+  position: relative;
+  font-size: 5rem;
+  margin: 0 auto;
+  color: var(--primary-color);
+  animation-name:pointing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition: ease-in-out;
+}
+
+
+/*---------------
+Themes 
+------------------*/
+
+
+
+.theme-bar{
+  height: 90px;
+  display: flex;
+  margin-top: 80px;
+  background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+
+}
+
+.theme-holder{
+  display: flex;
+  justify-content: center;
+  padding: 8px 5px;
+}
+
+.theme-text {
+  padding: 11px 5px;
+  margin: 0 0;
+}
+
+.theme {
+  background-color: #000 ;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: solid 1px #fff;
+}
+
+
+.light {
+  background-color: #0396A5 ;
+}
+
+.salmon {
+  background-color: #F4976C;
+
+  
+}
+
+.sea {
+  background-color: #52AB98;
+
+  
+}
+
+.dark{
+  background-color: #116466 ;
+
+  
+}
+
+.theme:hover {
+  transform: scale(1.5);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+
+/*---------------
+Media Queries 
+------------------*/
+@media (max-width: 672px) {
+    nav a, .nav-me a {
+     font-size: 1.25rem;
+    }
+    .tags p {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .social2 {
+      border-radius: 30px;
+      height: 30px;
+      margin: auto 3px;
+      width: 30px;
+      font-size: 15px;
+      text-align: center;
+      padding: 8px;
+    }
+
+    form{
+      bottom: 5px;
+    }
+    .tag-button {
+      width: 200px;
+      margin: 0 auto;}
+      
+    .js-plotly-plot .plotly .main-svg {
+      left: 0;
+    }
+    .js-plotly-plot{
+      transform: scale(0.75);
+    }
+    
+}

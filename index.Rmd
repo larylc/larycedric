@@ -1,0 +1,72 @@
+---
+output:
+  html_document:
+    css: styles.css
+---
+<link id="theme-style" rel= "stylesheet" href="light.css">
+
+<div class= "main">
+<div class= "containers theme-bar">
+<p class= "theme-text"> Couldn’t decide on a pallet, so you choose!</p>
+<div class= "theme-holder">
+<div data-mode="light" class = "theme light"></div>
+<div data-mode="salmon" class = "theme salmon"></div>
+<div data-mode="sea" class = "theme sea"></div>
+<div data-mode="dark" class = "theme dark"></div>
+</div>
+
+</div>
+
+<div class = "containers c1">
+<div class= "section" id ="about-section">
+  
+  
+  <h2>About</h2>
+  
+  <div class = "waffle"></div>
+  
+  <p class= "text paragraph1">Hi, I’m Cedric.</p>
+  <p class= "text paragraph2">Welcome to my personal website. I am an aspiring data analyst. </p>
+  <p class= "text paragraph3">Have a look around and see what I’ve been up to. </p>
+  
+  <form action="about.html">
+  <button class= "learn button">Learn More About Me </button>
+  </form>
+  
+  <p class ="arrow arrow1">﹀</p>
+
+
+  
+  
+</div>
+ </div>
+
+
+<div class = "containers c2">
+
+<div class= "section" id ="project-section">
+
+<h2>Projects</h2>
+
+<a href="https://larylc.github.io/Independent-Projects-/gendered_education_project_complete.html">
+<img  id= "img1" src="imgs/degrees conferred project 2.png">
+</a>
+
+<a href="https://loganlary.shinyapps.io/prodigies_app/?_ga=2.15136438.103236738.1633010249-569369622.1613318148">
+<img  id= "img2" src="imgs/Screenshot 2021-11-06 115535.png">
+</a>
+
+<a href="https://larylc.github.io/chess_birthday_project/">
+<img  id= "img3" src="imgs/project 4.png">
+</a>
+
+
+</div>
+ </div>
+
+
+</div>
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./script.js"></script>
