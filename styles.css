@@ -520,8 +520,12 @@ Media Queries
 ------------------*/
 @media (max-width: 672px) {
     nav a, .nav-me a {
-     font-size: 1.25rem;
+     font-size: 1rem;
     }
+    .waffle {
+      overflow: hidden;
+    }
+    
     .tags p {
       display: flex;
       justify-content: center;
@@ -549,6 +553,19 @@ Media Queries
     }
     .js-plotly-plot{
       transform: scale(0.75);
+    }
+    .learn {
+      font-size: 10px ;
+    }
+    
+    .arrow {
+      font-size: 2rem;
+    }
+    .section3 {
+      display: block;
+    }
+    #col3 {
+      margin: 0 auto;
     }
     
 }

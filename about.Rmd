@@ -116,9 +116,17 @@ ggplotly(p2, tooltip = c("text", "Topics" )) %>%
   <p class ="arrow arrow3">﹀</p>
 </div>
 <div id = "col5"> <h2>Resume <h2></div>
-![](C:\Users\laryl\Documents\larycedric\imgs\resume.pdf){width=50% height=600px #pdf}
-<!--<iframe src="imgs/resume.pdf#toolbar=0" width="500" height="500"></iframe>
-<a href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>-->
+<!--![](C:\Users\laryl\Documents\larycedric\imgs\resume.pdf){width=50% height=600px #pdf}
+<iframe src="imgs/resume.pdf#toolbar=0" width="500" height="500"></iframe>
+-->
+
+
+```{r message=FALSE, echo=FALSE, warning=FALSE}
+
+knitr::include_graphics("C:\\Users\\laryl\\Documents\\larycedric\\imgs\\resume.pdf")
+
+```
+<a href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>
 
 </div>
 </div>
