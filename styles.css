@@ -39,7 +39,14 @@ body {
 
 #project-section {
   background-color: var(--nav-color);
-  height: 600px;
+  height: 800px;
+}
+
+.projects-div {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -47,12 +54,12 @@ img {
   width: 300px;
 }
 
-#img1:hover, #img2:hover, #img3:hover  {
+#img1:hover, #img2:hover, #img3:hover, #img4:hover {
   transform: scale(1.25);
   transition: all 1s ease-in-out;
 }
 
-#img4 {
+#img5 {
   border-radius: 50%;
   margin-top: 10px;
 }
@@ -87,7 +94,7 @@ html{
 }
 .c2 {
   background-color: var(--nav-color) ;
-  height: 700px;
+  height: 1050px;
 }
 
 
@@ -98,7 +105,7 @@ html{
 }
 .main3 {
   background-color: var(--nav-color) ;
-  height: 1700px;
+  height: 1000px;
 }
 
 .section2 {
@@ -134,9 +141,6 @@ html{
 }
 
 
-#pdf {
-  margin: 0 auto;
-}
 /*---------------
 Data Viz
 ------------------*/
@@ -259,6 +263,7 @@ Navigation
   top: 0;
   width: 100%;
   z-index: 15;
+  margin: 0 auto;
 
 
 }
@@ -520,7 +525,7 @@ Media Queries
 ------------------*/
 @media (max-width: 672px) {
     nav a, .nav-me a {
-     font-size: 1rem;
+     font-size: 1.2rem;
     }
     .waffle {
       overflow: hidden;
@@ -549,23 +554,32 @@ Media Queries
       margin: 0 auto;}
       
     .js-plotly-plot .plotly .main-svg {
-      left: 0;
+      left:-32%;
     }
     .js-plotly-plot{
-      transform: scale(0.75);
+      transform: scale(0.7);
     }
     .learn {
       font-size: 10px ;
     }
     
     .arrow {
-      font-size: 2rem;
+      font-size: 2.5 rem;
     }
+    
+    .arrow2 {
+      top: 0px;    
+    }
+    
     .section3 {
       display: block;
     }
     #col3 {
       margin: 0 auto;
+    }
+    
+    nav ul {
+      justify-content: center;
     }
     
 }

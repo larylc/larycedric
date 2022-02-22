@@ -48,6 +48,9 @@ output:
 
 <h2>Projects</h2>
 
+
+<div class= "projects-div">
+
 <a href="https://larylc.github.io/Independent-Projects-/gendered_education_project_complete.html">
 <img  id= "img1" src="imgs/degrees conferred project 2.png">
 </a>
@@ -56,9 +59,15 @@ output:
 <img  id= "img2" src="imgs/Screenshot 2021-11-06 115535.png">
 </a>
 
-<a href="https://larylc.github.io/chess_birthday_project/">
+<a href="https://larylc.github.io/chess_bdays_bplaces/">
 <img  id= "img3" src="imgs/project 4.png">
 </a>
+
+
+<a href="https://larylc.github.io/Independent-Projects-/dreamworks_disney_pixar.html">
+<img  id= "img4" src="imgs/dreamworks_disney_pixar.png">
+</a>
+</div>
 
 
 </div>
