@@ -102,7 +102,7 @@ p2<- ggplot(journey_counted, aes(x= Date , y=Concept, color= Concept, text = Dat
 
 ggplotly(p2, tooltip = c("text", "Topics" )) %>%
   layout(
-    annotations = list(x = 1, y = -0.08, text = "Source: Courtesy of My Browsing History", 
+    annotations = list(x = 0.95, y = -0.08, text = "Source: Courtesy of My Browsing History", 
       showarrow = F, xref='paper', yref='paper', 
       xanchor='right', yanchor='auto', xshift=0, yshift=0,
       font=list(size= 6.5, color="darkslategrey")))
@@ -111,7 +111,7 @@ ggplotly(p2, tooltip = c("text", "Topics" )) %>%
 ```
   
  
- <a href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>
+ <a class="download-link" href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>
 
 </div>
 

@@ -39,26 +39,76 @@ body {
 
 #project-section {
   background-color: var(--nav-color);
-  height: 800px;
+  height: 950px;
 }
 
 .projects-div {
   width: 100%;
   display:flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
+  border: none;
+}
+
+.project-card:hover{
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 10px 12px hsl(0deg 0% 0% / 0.3);
+  text-decoration: none;
+  filter: brightness(1.1);
+}
 
 img {
   width: 300px;
+  margin-bottom: 0;
 }
 
-#img1:hover, #img2:hover, #img3:hover, #img4:hover {
-  transform: scale(1.25);
-  transition: all 1s ease-in-out;
+.card-description {
+  background: var(--nav-color);
+  margin: 0 0;
+  width: 300px;
+  height: 85px;
 }
 
+
+.card-heading  {
+  padding-top: 22px !important;
+  padding-left: 5px !important;
+  text-align: left;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.card-info{
+  padding-left: 5px !important;
+  text-align: left;
+  filter: var(--text-primary-color);
+  font-size: 1rem;
+}
+
+
+.card-tags{
+  padding-left: 5px !important;
+  text-align: left;
+  color: var(--primary-color);
+  font-size: 1rem;
+ }
+ 
+
+.card-heading:hover, .card-info:hover, .card-tags:hover{
+  text-decoration:none;
+}
+ 
+
+  
 #img5 {
   border-radius: 50%;
   margin-top: 10px;
@@ -206,41 +256,39 @@ Data Viz
 Typography
 ------------------*/
 
+a, a:hover{
+  text-decoration: none;
+}
+
+.download-link, .download-link:hover, .download-link:focus, .download-link:active  {
+  color: var(--primary-color);
+}
+
+#col4 p {
+  text-align: center;
+}
+
 * {
   font-family: 'Libre Baskerville','Baskervville', 'Cambria', serif;
   color: var(--text-primary-color);
-  
 }
 
-p {
+h2 {
+  padding-top: 20px !important;
+}
+
+.text {
   text-align: center;
 }
 
 .text {
   position: relative;
-  bottom: 175px;
+  bottom: 185px;
   font-weight: 700;
   z-index: 5;
 }
 
-img {
-  margin-bottom: 20px;
-}
 
-/*
-.paragraph2, .paragraph3 {
-  position: relative;
-  top: 80px;
-  font-weight: 700;
-  z-index: 10;
-  
-}  
-
-.text:hover {
-  opacity: 0.15;
-  transition: all 1s ease-in-out;
-  
-}*/
 
 form {
   margin: 0 40%;
@@ -250,6 +298,10 @@ form {
 
 .footer-container h2 {
   padding-top: 15px;
+}
+
+.footer-text {
+  text-align: center;
 }
 
 /*---------------
@@ -497,9 +549,9 @@ Themes
 
 .salmon {
   background-color: #F4976C;
-
-  
 }
+
+
 
 .sea {
   background-color: #52AB98;
@@ -554,21 +606,17 @@ Media Queries
       margin: 0 auto;}
       
     .js-plotly-plot .plotly .main-svg {
-      left:-32%;
+      left:-33%;
     }
     .js-plotly-plot{
-      transform: scale(0.7);
+      transform: scale(0.69);
     }
     .learn {
       font-size: 10px ;
     }
     
     .arrow {
-      font-size: 2.5 rem;
-    }
-    
-    .arrow2 {
-      top: 0px;    
+      opacity: 0;
     }
     
     .section3 {
@@ -580,6 +628,38 @@ Media Queries
     
     nav ul {
       justify-content: center;
+    }
+    
+    .projects-div {
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+    .projects-div a {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    
+    #project-section {
+      height: 1000px;
+    }
+    
+    .c2 {
+     height: 1275px; 
+    }
+    .section2 {
+      grid-template-columns: none;
+      grid-template-rows: 1fr;
+    }
+    #col1 p {
+      text-align: center;
+    }
+    #img5 {
+      width: 150px;
+    }
+    #col2 p {
+      top: 0px;
+      margin: 0 0 1px;
     }
     
 }

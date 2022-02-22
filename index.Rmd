@@ -52,20 +52,50 @@ output:
 <div class= "projects-div">
 
 <a href="https://larylc.github.io/Independent-Projects-/gendered_education_project_complete.html">
+<div class= "project-card">
 <img  id= "img1" src="imgs/degrees conferred project 2.png">
-</a>
-
-<a href="https://loganlary.shinyapps.io/prodigies_app/?_ga=2.15136438.103236738.1633010249-569369622.1613318148">
-<img  id= "img2" src="imgs/Screenshot 2021-11-06 115535.png">
+<div class="card-description">
+  <h4 class= "card-heading">Features of One Gender Schools</h4>
+  <p class= "card-info">Analysis of differences between single-sex and co-ed colleges</p>
+  <p class= "card-tags">R<p>
+</div>
+</div>
 </a>
 
 <a href="https://larylc.github.io/chess_bdays_bplaces/">
-<img  id= "img3" src="imgs/project 4.png">
+<div class= "project-card">
+<img  id= "img2" src="imgs/project 4.png">
+<div class="card-description">
+  <h4 class= "card-heading">Chess B-days and B-places</h4>
+  <p class= "card-info">Web-scraping chess player info from Wikipedia</p>
+  <p class= "card-tags">R, Python<p>
+</div>
+</div>
 </a>
 
 
+<a href="https://loganlary.shinyapps.io/prodigies_app/?_ga=2.15136438.103236738.1633010249-569369622.1613318148">
+<div class= "project-card">
+<img  id= "img3" src="imgs/Screenshot 2021-11-06 115535.png">
+<div class="card-description">
+  <h4 class= "card-heading">Pathway to Prodigy</h4>
+  <p class= "card-info">Shiny App for comparing chess prodigies by age</p>
+  <p class= "card-tags">R, Python<p>
+</div>
+</div>
+</a>
+
+
+
 <a href="https://larylc.github.io/Independent-Projects-/dreamworks_disney_pixar.html">
+<div class= "project-card">
 <img  id= "img4" src="imgs/dreamworks_disney_pixar.png">
+<div class="card-description">
+  <h4 class= "card-heading">DreamWork, Disney, or Pixar </h4>
+  <p class= "card-info">Data viz webpage comparing animation studios</p>
+  <p class= "card-tags">R, Python, D3.js<p>
+</div>
+</div>
 </a>
 </div>
 
