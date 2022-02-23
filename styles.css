@@ -64,6 +64,7 @@ body {
   box-shadow: 0 10px 12px hsl(0deg 0% 0% / 0.3);
   text-decoration: none;
   filter: brightness(1.1);
+  transform: scale(1.05);
 }
 
 img {
@@ -233,7 +234,6 @@ Data Viz
 
 
 .js-plotly-plot .plotly .main-svg {
-  left: 20%;
   background:  transparent !important;
 }
 
@@ -598,23 +598,18 @@ Media Queries
       padding: 8px;
     }
 
-    form{
-      bottom: 5px;
-    }
     .tag-button {
       width: 200px;
       margin: 0 auto;}
-      
-    .js-plotly-plot .plotly .main-svg {
-      left:-35%;
-    }
-    .js-plotly-plot{
-      transform: scale(0.65);
-    }
-    .learn {
-      font-size: 10px ;
+    
+    .xtick text{
+     font-size: 5px !important;
     }
     
+    .g-gtitle text {
+      font-size: 10px !important;
+      font-weight: bold !important;;
+    }
     .arrow {
       opacity: 0;
     }

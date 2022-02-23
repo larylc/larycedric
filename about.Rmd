@@ -61,7 +61,7 @@ output:
 <div id="col4" >
 <h2>Skills & Resume</h2>
   
-```{r message=FALSE, echo=FALSE, warning=FALSE}
+```{r, out.width='100%', fig.align='center', message=FALSE, echo=FALSE, warning=FALSE}
 library(data.table)
 library(tidyverse)
 library(hrbrthemes)
