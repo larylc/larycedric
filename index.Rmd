@@ -91,7 +91,7 @@ output:
 <div class= "project-card">
 <img  id= "img4" src="imgs/dreamworks_disney_pixar.png">
 <div class="card-description">
-  <h4 class= "card-heading">DreamWork, Disney, or Pixar </h4>
+  <h4 class= "card-heading">DreamWorks, Disney, or Pixar </h4>
   <p class= "card-info">Data viz webpage comparing animation studios</p>
   <p class= "card-tags">R, Python, D3.js<p>
 </div>
