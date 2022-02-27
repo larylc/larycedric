@@ -1,4 +1,5 @@
 ---
+pagetitle: Cedric Lary
 output:
   html_document:
     css: styles.css
