@@ -53,7 +53,7 @@ function chartSizer(){
   waffleNumber = 200;
   return waffleNumber;} 
   else {
-  waffleNumber = 80;
+  waffleNumber = 60;
   return waffleNumber;}
 }
 
