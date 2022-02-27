@@ -1,3 +1,12 @@
+// Mobile
+sectionSize = parseInt(d3.select(".section").style("width"), 10) > 672 ? "desktop" : "mobile";
+console.log(sectionSize);
+
+
+
+
+//Themes
+
 let theme_change = localStorage.getItem("theme-change")
 
 if(theme_change == null){
@@ -5,23 +14,6 @@ if(theme_change == null){
 }else{
   setTheme(theme_change)
 }
-
-
-
-const waffle = d3.select('.waffle');
- 
-const numbers = d3.range(260);
-   
-
-waffle
-	.selectAll('.block')
-	.data(numbers)
-	.enter()
-	.append('div')
-	.attr('class', 'block')
-	
-//Themes
-
 
 let themes = document.getElementsByClassName("theme");
 
@@ -51,3 +43,33 @@ function setTheme(mode) {
   localStorage.setItem("theme-change", mode)
   
 }
+
+
+// Waffle
+
+function chartSizer(){
+  let chartWidth;
+  if (sectionSize == "desktop")  {
+  waffleNumber = 200;
+  return waffleNumber;} 
+  else {
+  waffleNumber = 80;
+  return waffleNumber;}
+}
+
+
+function drawWaffle(value) {
+
+const waffle = d3.select('.waffle');
+ 
+const numbers = d3.range(value);
+   
+waffle
+	.selectAll('.block')
+	.data(numbers)
+	.enter()
+	.append('div')
+	.attr('class', 'block')
+}; 
+
+drawWaffle(chartSizer());

@@ -215,7 +215,7 @@ Data Viz
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
+  width: 80%;
 }
 
 .block {
@@ -283,7 +283,7 @@ h2 {
 
 .text {
   position: relative;
-  bottom: 185px;
+  bottom: 30%;
   font-weight: 700;
   z-index: 5;
 }
@@ -658,4 +658,12 @@ Media Queries
       margin: 0 0 1px;
     }
     
+    .block {
+      width: 25px;
+      height: 25px;
+      margin: 5px;}
+      
+    .text {
+      bottom: 40%;
+    }
 }
