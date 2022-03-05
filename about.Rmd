@@ -1,4 +1,5 @@
 ---
+pagetitle: Learn More About Me
 output:
   html_document:
     css: styles.css
@@ -120,5 +121,4 @@ ggplotly(p2, tooltip = c("text", "Topics" )) %>%
 </div>
 
 
-<script src="https://d3js.org/d3.v6.min.js"></script>
-<script src="./script.js"></script>
+<script src="./script2.js"></script>
