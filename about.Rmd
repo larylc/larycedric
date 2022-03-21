@@ -28,7 +28,7 @@ output:
 <p>I started learning how to code while earning my BA in Biology and Education at Swarthmore College. While working as a private tutor, I took a more serious interest in data science and started building projects in R, Python, D3.js. Now, I spend most of my free time troubleshooting. </p>
 <div class= "footer-icons">
   <a href="https://github.com/larylc"><i class="fab fa-github social2"></i></a>
-  <a href="https://www.linkedin.com/in/cedric-lary-1281b01a2/"><i class="fab fa-linkedin social2"></i></a>
+  <a href="https://www.linkedin.com/in/cedriclary/"><i class="fab fa-linkedin social2"></i></a>
   <a href="https://larylc.github.io/Independent-Projects-/index.html"><i class="fas fa-link social2"></i></a>
 </div>
   <p class ="arrow arrow2">﹀</p>
