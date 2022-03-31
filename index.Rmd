@@ -8,7 +8,7 @@ output:
 
 <div class= "main">
 <div class= "containers theme-bar">
-<p class= "theme-text"> Click on these buttons to choose a website color palette: </p>
+<p class= "theme-text"> Choose a website color palette: </p>
 <div class= "theme-holder">
 <div data-mode="light" class = "theme light"></div>
 <div data-mode="salmon" class = "theme salmon"></div>

@@ -703,7 +703,7 @@ Media Queries
       overflow: hidden;
     }
     
-    .tags p {
+    .tags {
       display: flex;
       justify-content: center;
       flex-direction: column;
