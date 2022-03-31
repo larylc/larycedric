@@ -1,0 +1,30 @@
+---
+pagetitle: Selected Visualizations
+output:
+  html_document:
+    css: styles.css
+---
+<link id="theme-style" rel= "stylesheet" href="light.css">
+
+
+<div class= "containers theme-bar">
+<p class= "theme-text"> Choose a website color palette:</p>
+<div class= "theme-holder">
+<div data-mode="light" class = "theme light"></div>
+<div data-mode="salmon" class = "theme salmon"></div>
+<div data-mode="sea" class = "theme sea"></div>
+<div data-mode="dark" class = "theme dark"></div>
+</div>
+</div>
+
+# Tableau 
+
+<a href="https://github.com/larylc/Tableau-Visualizations">
+<img  id= "img6" src="imgs/How Seasons Affect Prodigies Picture.png">
+</a>
+
+<p> More Visualizations coming soon!</p>
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./script.js"></script>
