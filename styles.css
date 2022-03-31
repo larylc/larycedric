@@ -708,6 +708,12 @@ Media Queries
       justify-content: center;
       flex-direction: column;
     }
+    
+    .tags form {
+      margin: auto;
+    }
+    
+    
     .social2 {
       border-radius: 30px;
       height: 30px;
