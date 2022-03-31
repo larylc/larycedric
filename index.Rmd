@@ -8,7 +8,7 @@ output:
 
 <div class= "main">
 <div class= "containers theme-bar">
-<p class= "theme-text"> Couldn’t decide on a pallet, so you choose!</p>
+<p class= "theme-text"> Click on these buttons to choose a website color palette: </p>
 <div class= "theme-holder">
 <div data-mode="light" class = "theme light"></div>
 <div data-mode="salmon" class = "theme salmon"></div>
@@ -24,11 +24,25 @@ output:
   
   <h2>About</h2>
   
-  <div class = "waffle"></div>
+  <svg id="svg">
+        <rect id = "one" transform=
+        "translate (0, 200) scale(1,-1)"></rect>
+        <rect id = "two" transform=
+        "translate (0, 200) scale(1,-1)" ></rect>
+        <rect id = "three" transform=
+        "translate (0, 200) scale(1,-1)"></rect>
+        <rect id = "four" transform=
+        "translate (0, 200) scale(1,-1)"></rect>
+        <rect id = "five" transform=
+        "translate (0, 200) scale(1,-1)"></rect>
+        <rect id = "six" transform=
+        "translate (0, 200) scale(1,-1)"></rect>
+  </svg>
+
   
   <p class= "text paragraph1">Hi, I’m Cedric.</p>
   <p class= "text paragraph2">Welcome to my personal website! I am an aspiring data analyst. </p>
-  <p class= "text paragraph3">Have a look around and see what I’ve been up to. </p>
+  <p class= "text paragraph3">Scroll down to see my projects or click on the button to learn more about me.</p>
   
   <form action="about.html">
   <button class= "learn button">Learn More About Me </button>

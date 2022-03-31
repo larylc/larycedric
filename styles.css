@@ -194,8 +194,9 @@ html{
 
 
 /*---------------
-Data Viz
+Waffle Viz
 ------------------*/
+/*
 @keyframes change-color{
   from {background-color: var(--block-color);}
   to {background-color: var(--primary-color);}
@@ -228,6 +229,111 @@ Data Viz
   background-color: var(--block-color);
 
 }
+*/
+
+/*---------------
+Front Page Plot*
+------------------*/
+
+#svg {
+  display: block;
+  margin: auto;
+}
+#one, #two, #three, #four, #five, #six {
+   fill: var(--primary-color);
+}
+
+
+@keyframes bar-anim {
+    0% {height: 100%}
+    50% {height: 1%}
+    100% {height: 100%}
+}
+
+
+@keyframes bar-anim2 {
+    0% {height: 90%}
+    50% {height: 1%}
+    100% {height: 90%}
+}
+
+
+
+@keyframes bar-anim3 {
+    0% {height: 80%}
+    50% {height: 1%}
+    100% {height: 80%}
+}
+
+
+@keyframes bar-anim4 {
+    0% {height: 70%}
+    50% {height: 1%}
+    100% {height: 70%}
+}
+
+@keyframes bar-anim5 {
+    0% {height: 60%}
+    50% {height: 1%}
+    100% {height: 60%}
+}
+
+
+@keyframes bar-anim6 {
+    0% {height: 50%}
+    50% {height: 1%}
+    100% {height: 50%}
+}
+
+
+#one {
+    animation-name: bar-anim;
+    animation-duration: 2s; 
+    animation-delay: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+#two {
+    animation-name: bar-anim2;
+    animation-duration: 2s; 
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#three {
+    animation-name: bar-anim3;
+    animation-duration: 2s; 
+    animation-delay: 0.75s;
+    animation-iteration-count: infinite;
+}
+
+#four {
+    animation-name: bar-anim4;
+    animation-duration: 2s; 
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+#five {
+    animation-name: bar-anim5;
+    animation-duration: 2s; 
+    animation-delay: 1.25s;
+    animation-iteration-count: infinite;
+}
+
+#six {
+    animation-name: bar-anim6;
+    animation-duration: 2s; 
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+/*---------------
+Skill Plot*
+------------------*/
 
 .main-svg {
     background: none ;
@@ -261,8 +367,17 @@ a, a:hover{
   text-decoration: none;
 }
 
-.download-link, .download-link:hover, .download-link:focus, .download-link:active  {
+.download-link {
+  font-size: 2rem;
+}
+
+.download-link, .download-link:hover, .download-link:focus, .download-link:active, 
+.datacamp-link, .datacamp-link:hover, .datacamp-link:focus, .datacamp-link:active {
   color: var(--primary-color);
+}
+
+.download-link:hover, .datacamp-link:hover {
+  text-decoration: underline;
 }
 
 #col4 p {
@@ -283,8 +398,6 @@ h2 {
 }
 
 .text {
-  position: relative;
-  bottom: 30%;
   font-weight: 700;
   z-index: 5;
 }
@@ -294,7 +407,6 @@ h2 {
 form {
   margin: 0 40%;
   position: relative;
-  bottom: 60px;
 }
 
 .footer-container h2 {
@@ -473,6 +585,8 @@ Styles
   margin: 0 2px;
   border: solid 1px  #fff;
   border-radius: 5%;
+  width:100%;
+
 
 }
 
@@ -482,11 +596,16 @@ Styles
     border: solid 1px  var(--primary-color);
 }
 
-.tags p {
+.tags {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2px;
 }
+
+.tags form {
+  margin: 0;
+}
+
 
 
 @keyframes pointing{
@@ -536,8 +655,8 @@ Themes
 
 .theme {
   background-color: #000 ;
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   margin: 0 3px;
   border: solid 1px #fff;

@@ -44,7 +44,7 @@ function setTheme(mode) {
   
 }
 
-
+/*
 // Waffle
 
 function chartSizer(){
@@ -73,3 +73,24 @@ waffle
 }; 
 
 drawWaffle(chartSizer());
+
+*/
+
+
+//Animated Bar Chart 
+
+const dataArray = [50, 50, 50, 50, 50, 50];
+
+const rect = d3.select("#svg")
+    .selectAll("rect")
+    .data(dataArray)
+    .attr("height", function (d) {
+        return d;
+    })
+    .attr("width", 42)
+    .attr("x", (d,i) => i * 45)
+    .attr("y", 50);
+  
+  
+  
+  

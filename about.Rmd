@@ -8,7 +8,7 @@ output:
 <link id="theme-style" rel= "stylesheet" href="light.css">
 
 <div class= "containers theme-bar">
-<p class= "theme-text"> Couldn’t decide on a pallet, so you choose!</p>
+<p class= "theme-text"> Click on these buttons to choose a website color palette:</p>
 <div class= "theme-holder">
 <div data-mode="light" class = "theme light"></div>
 <div data-mode="salmon" class = "theme salmon"></div>
@@ -25,7 +25,8 @@ output:
 </div>
 
 <div id= "col2">
-<p>I started learning how to code while earning my BA in Biology and Education at Swarthmore College. While working as a private tutor, I took a more serious interest in data science and started building projects in R, Python, D3.js. Now, I spend most of my free time troubleshooting. </p>
+<p>I started learning how to code while earning my BA in Biology and Education at Swarthmore College. While working as a  private tutor, I took a more serious interest in data science and started taking courses on <a class="datacamp-link" href="https://www.datacamp.com/" >DataCamp</a>. Now, I build projects in R, Python, and D3.js.</p>
+
 <div class= "footer-icons">
   <a href="https://github.com/larylc"><i class="fab fa-github social2"></i></a>
   <a href="https://www.linkedin.com/in/cedriclary/"><i class="fab fa-linkedin social2"></i></a>
@@ -45,14 +46,30 @@ output:
 
 <h2>Interests</h2>
 <div class = "tags"> 
+  <form action="https://loganlary.shinyapps.io/prodigies_app/?_ga=2.15136438.103236738.1633010249-569369622.1613318148">
   <button class= "tag-button">Data Viz</button>
-  <button class= "tag-button">Data Mining</button>
+  </form>
+  
+  <form action="https://larylc.github.io/Independent-Projects-/dreamworks_disney_pixar.html">
   <button class= "tag-button">Data Journalism</button>
+  </form>
+  
+  <form action="index.html">
   <button class= "tag-button">Front-End Development</button>
+  </form>
+  
+  <form action="https://larylc.github.io/chess_bdays_bplaces/">
   <button class= "tag-button">Web-Scraping</button>
-  <button class= "tag-button">Research</button>
+  </form>
+
+  <form action= "#">
   <button class= "tag-button">Education</button>
+  </form>
+  
+  <form action= "https://github.com/larylc/Summer-Research-2018/blob/main/Sigma%20Xi%20Research%20Poster%20Summer%202018%20Cedric%20Lary-%20Ultra.pdf">
   <button class= "tag-button">Biology</button>
+  </form>
+
 </div>  
 
 </div>
@@ -60,7 +77,9 @@ output:
 
 
 <div id="col4" >
-<h2>Skills & Resume</h2>
+<h2>Resume & Skills</h2>
+
+ <a class="download-link" href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>
   
 ```{r, out.width='100%', fig.align='center', message=FALSE, echo=FALSE, warning=FALSE}
 library(data.table)
@@ -112,7 +131,6 @@ ggplotly(p2, tooltip = c("text", "Topics" )) %>%
 ```
   
  
- <a class="download-link" href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>
 
 </div>
 
