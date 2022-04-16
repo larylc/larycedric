@@ -72,7 +72,7 @@ output:
 <div class="card-description">
   <h4 class= "card-heading">Features of One Gender Schools</h4>
   <p class= "card-info">Analysis of differences between single-sex and co-ed colleges</p>
-  <p class= "card-tags">R<p>
+  <p class= "card-tags">R</p>
 </div>
 </div>
 </a>
@@ -82,8 +82,8 @@ output:
 <img  id= "img2" src="imgs/project 4.png">
 <div class="card-description">
   <h4 class= "card-heading">Grandmaster B-days and B-places</h4>
-  <p class= "card-info">Web-scraping project that extracts chess grandmaster data from Wikipedia.</p>
-  <p class= "card-tags">R, Python<p>
+  <p class= "card-info">Web-scraping project that extracts chess grandmaster data from Wikipedia</p>
+  <p class= "card-tags">R, Python</p>
 </div>
 </div>
 </a>
@@ -95,7 +95,7 @@ output:
 <div class="card-description">
   <h4 class= "card-heading">Pathway to Prodigy</h4>
   <p class= "card-info">Shiny App for comparing chess prodigies by age</p>
-  <p class= "card-tags">R, Python<p>
+  <p class= "card-tags">R, Python</p>
 </div>
 </div>
 </a>
@@ -108,7 +108,7 @@ output:
 <div class="card-description">
   <h4 class= "card-heading">DreamWorks, Disney, or Pixar </h4>
   <p class= "card-info">Data viz webpage comparing animation studios</p>
-  <p class= "card-tags">R, Python, D3.js<p>
+  <p class= "card-tags">R, Python, D3.js</p>
 </div>
 </div>
 </a>
