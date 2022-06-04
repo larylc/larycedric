@@ -112,6 +112,20 @@ output:
 </div>
 </div>
 </a>
+
+<a href="https://larylc.github.io/Independent-Projects-/reviz_it.html">
+<div class= "project-card">
+<img  id= "img4a" src="imgs/reviz_pic.png">
+<div class="card-description">
+  <h4 class= "card-heading">Re-viz It</h4>
+  <p class= "card-info">Data viz report that redesigns problematic visualizations</p>
+  <p class= "card-tags">R</p>
+</div>
+</div>
+</a>
+
+
+
 </div>
 
 
