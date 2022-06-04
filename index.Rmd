@@ -115,7 +115,7 @@ output:
 
 <a href="https://larylc.github.io/Independent-Projects-/reviz_it.html">
 <div class= "project-card">
-<img  id= "img4a" src="imgs/reviz_pic.png">
+<img  id= "img4a" src="imgs/reviz_cb2.png">
 <div class="card-description">
   <h4 class= "card-heading">Re-viz It</h4>
   <p class= "card-info">Data viz report that redesigns problematic visualizations</p>
