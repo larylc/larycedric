@@ -712,7 +712,7 @@ Media Queries
 ------------------*/
 @media (max-width: 672px) {
     nav a, .nav-me a {
-     font-size: 1.2rem;
+     font-size: 1.15rem;
     }
     .waffle {
       overflow: hidden;
