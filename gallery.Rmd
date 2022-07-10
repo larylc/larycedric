@@ -17,13 +17,31 @@ output:
 </div>
 </div>
 
-# Tableau 
-
-<a href="https://github.com/larylc/Tableau-Visualizations">
+<div class= 'section' id='gallery-container'>
+<div class= 'gallery-pic'>
+<a href="https://github.com/larylc/Gallery-Visualizations/blob/main/README.md#tableau-visualization-1-how-seasons-affect-prodigies">
 <img  id= "img6" src="imgs/How Seasons Affect Prodigies Picture.png">
 </a>
+</div>
 
-<p> More Visualizations coming soon!</p>
+<div class= 'gallery-pic'>
+<a href="https://github.com/larylc/Gallery-Visualizations/blob/main/README.md#r-visualization-1-percentiles-reveal-super-grandmaster-specialties">
+<img  id= "img7" src="imgs/Percentiles Show GM Specialties.png">
+</a>
+</div>
+
+
+<div class= 'gallery-pic'>
+<a href="https://github.com/larylc/Gallery-Visualizations#r-visualization-2-who-do-we-see-at-need-blind-institutions">
+<img  id= "img8" src="imgs/Need Blind Breakdown.png">
+</a>
+</div>
+
+
+
+
+</div>
+
 
 
 <script src="https://d3js.org/d3.v6.min.js"></script>

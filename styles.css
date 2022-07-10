@@ -73,7 +73,7 @@ img {
   margin-bottom: 0;
 }
 
-#img6:hover {
+#img6:hover, #img7:hover, #img8:hover  {
   transition: all 0.5s ease-in-out;
   transform: scale(1.05);
   filter: brightness(1.05);
@@ -612,7 +612,16 @@ Styles
   margin: 0;
 }
 
+#gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+  margin-top: 10px;
+}
 
+.gallery-pic p {
+  text-align: center;
+}
 
 @keyframes pointing{
   from {top: 0px}
@@ -707,6 +716,12 @@ Media Queries
     }
     .waffle {
       overflow: hidden;
+    }
+    
+    #gallery-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
     }
     
     .tags {
