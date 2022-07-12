@@ -18,6 +18,7 @@ output:
 </div>
 
 <div class= 'section' id='gallery-container'>
+
 <div class= 'gallery-pic'>
 <a href="https://github.com/larylc/Gallery-Visualizations/blob/main/README.md#tableau-visualization-1-how-seasons-affect-prodigies">
 <img  id= "img6" src="imgs/How Seasons Affect Prodigies Picture.png">
