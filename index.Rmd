@@ -41,7 +41,7 @@ output:
 
   
   <p class= "text paragraph1">Hi, I’m Cedric.</p>
-  <p class= "text paragraph2">Welcome to my personal website! I'm data analyst who loves making visualizations.</p>
+  <p class= "text paragraph2">Welcome to my personal website! I'm a data analyst who loves making visualizations.</p>
   <p class= "text paragraph3">Scroll down to see my projects or click on the button to learn more about me.</p>
   
   <form action="about.html">
