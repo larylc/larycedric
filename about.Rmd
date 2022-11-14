@@ -81,55 +81,58 @@ output:
 
  <a class="download-link" href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>
   
+
 ```{r, out.width='100%', fig.align='center', message=FALSE, echo=FALSE, warning=FALSE}
-library(data.table)
+
+
 library(tidyverse)
-library(hrbrthemes)
-library(ggplot2)
-library(lubridate)
-library(plotly)
+library(highcharter)
+
+skills <- read_csv("C:/Users/laryl/Downloads/data_skills.csv")
+
+special_palette <-c("#1F2041", "#4B3F72", "#FFC857", "#4DA891", "#119DA4", "#19647E", "#417F95" )
+
+my_theme <- hc_theme(
+chart = list(
+      backgroundColor = "transparent",
+      style = list(
+      fontFamily = "Libre Baskerville"
+      )))
+
+skills%>%
+hchart(
+    "packedbubble", 
+    hcaes(value= Comfort,name = Skill, group = Tool)
+    )%>%
+  hc_plotOptions(
+    packedbubble = list(
+
+      layoutAlgorithm = list(
+        gravitationalConstant =  0.07,
+        bubblePadding = 8,
+        splitSeries = TRUE,
+        seriesInteraction = FALSE,
+        dragBetweenSeries = FALSE,
+        maxIterations = 500
+      )
+    )
+  )%>%
+hc_tooltip(
+    headerFormat = "",
+    pointFormat = "<b>{point.Tool}:</b> {point.name}"
+  ) %>%
+  hc_colors(special_palette)%>%
+  hc_add_theme(my_theme)%>%
+  hc_title(text = "Core Skills Visualized")
 
 
 
-my_stamp <- stamp("Jun-2020", orders = "by")
-
-journey <- fread("C:/Users/laryl/Desktop/Data Sets/data_journey.csv")   %>%
-  mutate(Concept = dplyr::recode(Concept, 
-                                "JavaScript" = "D3.js and JavaScript",
-                                "D3.js" = "D3.js and JavaScript" ))%>%
-  mutate(Date_formatted = my_stamp(Date))
-
-
-journey_counted <- journey %>%
-  count(Date, Date_formatted, Concept, Topics)
-
-
-
-journey_counted$Concept <- factor(journey_counted$Concept, levels = c( "Tableau", "D3.js and JavaScript",  "HTML and CSS","Google Sheets/Excel" , "SQL", "Python", "R"))
-
-p2<- ggplot(journey_counted, aes(x= Date , y=Concept, color= Concept, text = Date_formatted )) + 
-  geom_jitter(aes(group= Topics), alpha= 0.5)+
-  scale_color_manual(values = c("#0f7d6b", "#FAF8A8", "#40CBEC", "#46D69F","#B9ACEA",  "#FFCD2D","#B9D4ED"  ))+
-  scale_x_date(date_labels="%b-%Y", date_breaks = "2 months") +
-  labs(
-       title = "Topics Covered During Data Science Journey")+
-  theme_minimal()+
-  theme(plot.title = element_text(hjust = 0.5),
-        plot.subtitle = element_text( color = "darkslategrey", margin = margin(b =10), hjust = 0.5), 
-        legend.position = "none",
-        text = element_text(family = "Libre Baskerville"), axis.title.y = element_blank(), axis.title.x = element_blank(),
-        axis.text = element_text(size = 6))
-
-ggplotly(p2, tooltip = c("text", "Topics" )) %>%
-  layout(
-    annotations = list(x = 0.95, y = -0.08, text = "Source: Courtesy of My Browsing History", 
-      showarrow = F, xref='paper', yref='paper', 
-      xanchor='right', yanchor='auto', xshift=0, yshift=0,
-      font=list(size= 6.5, color="darkslategrey")))
-  
-
-```
-  
+````
+ 
+ 
+ 
+ 
+ 
  
 
 </div>
