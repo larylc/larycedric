@@ -390,9 +390,8 @@ New Skill Plot*
 ------------------*/
 
 
-.highcharts-legend-item text {
+.highcharts-legend-item text, .highcharts-title {
     fill: var(--graph-text-color) !important;
-
 }
 
 
