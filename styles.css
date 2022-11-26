@@ -73,7 +73,7 @@ img {
   margin-bottom: 0;
 }
 
-#img6:hover, #img7:hover, #img8:hover  {
+#img6:hover, #img7:hover, #img8:hover, #img9:hover  {
   transition: all 0.5s ease-in-out;
   transform: scale(1.05);
   filter: brightness(1.05);

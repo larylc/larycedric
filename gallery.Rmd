@@ -19,25 +19,31 @@ output:
 
 <div class= 'section' id='gallery-container'>
 
+
 <div class= 'gallery-pic'>
-<a href="https://github.com/larylc/Gallery-Visualizations/blob/main/README.md#tableau-visualization-1-how-seasons-affect-prodigies">
-<img  id= "img6" src="imgs/How Seasons Affect Prodigies Picture.png">
+<a href="https://github.com/larylc/Gallery-Visualizations#percentiles-reveal-super-grandmaster-specialties-r">
+<img  id= "img6" src="imgs/supergm.png">
 </a>
 </div>
 
 <div class= 'gallery-pic'>
-<a href="https://github.com/larylc/Gallery-Visualizations/blob/main/README.md#r-visualization-1-percentiles-reveal-super-grandmaster-specialties">
-<img  id= "img7" src="imgs/Percentiles Show GM Specialties.png">
+<a href="https://github.com/larylc/Gallery-Visualizations#seasonal-births-of-grandmasters-vs-general-population-r">
+<img  id= "img7" src="imgs/seasonbirths.png">
 </a>
 </div>
 
 
 <div class= 'gallery-pic'>
-<a href="https://github.com/larylc/Gallery-Visualizations#r-visualization-2-who-do-we-see-at-need-blind-institutions">
-<img  id= "img8" src="imgs/Need Blind Breakdown.png">
+<a href="https://github.com/larylc/Gallery-Visualizations#who-do-we-see-attending-need-blind-colleges-r">
+<img  id= "img8" src="imgs/nbcolleges.png">
 </a>
 </div>
 
+<div class= 'gallery-pic'>
+<a href="https://github.com/larylc/Gallery-Visualizations#what-125-years-of-temperatures-tell-us-about-weather-r">
+<img  id= "img9" src="imgs/njweather.png">
+</a>
+</div>
 
 
 
