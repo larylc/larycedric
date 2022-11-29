@@ -123,7 +123,7 @@ hc_tooltip(
   ) %>%
   hc_colors(special_palette)%>%
   hc_add_theme(my_theme)%>%
-  hc_title(text = "Core Skills Visualized")
+  hc_title(text = "Skills Across Different Tools")
 
 
 
