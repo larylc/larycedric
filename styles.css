@@ -722,8 +722,8 @@ Styles
 
 
 @media (max-width: 480px) {
-  .giant-text{
-    font-size:7rem;
+.giant-text{
+    font-size:6rem;
   }
   nav a {
   font-size: 1rem;
