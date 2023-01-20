@@ -1,8 +1,14 @@
 :root{
---primary-color: #0396A5;
---secondary-color: #F2F2F2;
---nav-color: #fff;
---block-color: #CCC;
---text-primary-color: #000;
---graph-text-color: #000;
+  --background-color: #F9F9F9;
+  --secondary-color-normal: #21C1BD;
+  --secondary-color-light: #D1F7F6;
+
+  
+  --nav-color: #fff;
+
+  --normal-text-color: #6A6666;
+  --bolded-text-color: #21C1BD;
+  --giant-text-color:  #062423;
+  --highlight-color: #FFF2CC;
+
 }

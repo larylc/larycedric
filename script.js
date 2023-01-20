@@ -1,11 +1,32 @@
-// Mobile
-sectionSize = parseInt(d3.select(".section").style("width"), 10) > 672 ? "desktop" : "mobile";
-console.log(sectionSize);
 
+const dataArray = [30, 30, 30];
 
+function plot_bars(x) {
+const rect = d3.select(x)
+    .selectAll("rect")
+    .data(dataArray)
+    .attr("width", function(d) { return(d)})
+    .attr("height", 12)
+    .attr("x", 1)
+    .attr("y", function(d,i) {return i*15 } );
+};
+  
+plot_bars(".svg");
 
+plot_bars(".svg2");
 
-//Themes
+plot_bars(".svg3");
+
+plot_bars(".svg4");
+
+plot_bars(".svg5");
+
+plot_bars(".svg6");
+
+plot_bars(".svg7");
+
+//themes
+
 
 let theme_change = localStorage.getItem("theme-change")
 
@@ -31,66 +52,9 @@ function setTheme(mode) {
   if(mode == "light"){
     document.getElementById("theme-style").href = "light.css"
   }
-    if(mode == "salmon"){
-    document.getElementById("theme-style").href = "salmon.css"
-  }
-    if(mode == "sea"){
-    document.getElementById("theme-style").href = "sea.css"
-  }
     if(mode == "dark"){
     document.getElementById("theme-style").href = "dark.css"
   }
   localStorage.setItem("theme-change", mode)
   
 }
-
-/*
-// Waffle
-
-function chartSizer(){
-  let chartWidth;
-  if (sectionSize == "desktop")  {
-  waffleNumber = 200;
-  return waffleNumber;} 
-  else {
-  waffleNumber = 60;
-  return waffleNumber;}
-}
-
-
-function drawWaffle(value) {
-
-const waffle = d3.select('.waffle');
- 
-const numbers = d3.range(value);
-   
-waffle
-	.selectAll('.block')
-	.data(numbers)
-	.enter()
-	.append('div')
-	.attr('class', 'block')
-}; 
-
-drawWaffle(chartSizer());
-
-*/
-
-
-//Animated Bar Chart 
-
-const dataArray = [50, 50, 50, 50, 50, 50];
-
-const rect = d3.select("#svg")
-    .selectAll("rect")
-    .data(dataArray)
-    .attr("height", function (d) {
-        return d;
-    })
-    .attr("width", 42)
-    .attr("x", (d,i) => i * 45)
-    .attr("y", 50);
-  
-  
-  
-  

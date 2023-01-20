@@ -1,0 +1,64 @@
+---
+pagetitle: Projects
+output:
+  html_document:
+    css: styles.css
+---
+<link id="theme-style" rel= "stylesheet" href="light.css">
+
+<div class = "overall-container c-project">
+<section class= "container project project-section">
+<div class="bar-animation-container">
+<svg class="svg5">
+<rect class = "one" ></rect>
+<rect class = "two"></rect>
+<rect class = "three"></rect>
+</svg>
+</div>
+
+<div class="project-col-container">
+<h2 class= "project-header">
+<span class="project-rest">Current Projects</span>
+<span class= "project-num"> 2023</span>
+</h2>
+
+<a class= "card-link" href="#">
+<div class= "project-card">
+<picture><img  class= "pic select-pic" src="imgs/college_dash.png"></picture>
+<div class="card-description">
+  <h4 class= "card-heading">Everything College Dashboard</h4>
+  <p class= "card-info">Dashboard for comparing US colleges side by side.</p>
+  <p class= "card-tags">R, Python, Shiny</p>
+</div>
+</div>
+</a>
+
+<div class= "divider"> </div>
+
+<h2 class= "project-header">
+<span class="project-rest">Archived Projects</span>
+<span class= "project-num"> 2020-2022</span>
+</h2>
+
+<form class = "button-form" action="https://larylc.github.io/Independent-Projects-/index.html">
+  <button class= "previous-button">previous work</button>
+</form>
+
+</div>
+
+
+
+<div class= "page-design-container">
+<div class = "page-design-holder">
+<div class= "page-design-line"></div>
+<h3 class= "page-design-info projects-info">Projects</h3>
+</div>
+</div>
+
+<section>
+</div>
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./script.js" defer></script>
+

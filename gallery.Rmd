@@ -4,21 +4,12 @@ output:
   html_document:
     css: styles.css
 ---
+
 <link id="theme-style" rel= "stylesheet" href="light.css">
 
+<div class = "overall-container c-gallery">
 
-<div class= "containers theme-bar">
-<p class= "theme-text"> Choose a website color palette:</p>
-<div class= "theme-holder">
-<div data-mode="light" class = "theme light"></div>
-<div data-mode="salmon" class = "theme salmon"></div>
-<div data-mode="sea" class = "theme sea"></div>
-<div data-mode="dark" class = "theme dark"></div>
-</div>
-</div>
-
-<div class= 'section' id='gallery-container'>
-
+<section class= 'container gallery gallery-section'>
 
 <div class= 'gallery-pic'>
 <a href="https://github.com/larylc/Gallery-Visualizations#percentiles-reveal-super-grandmaster-specialties-r">
@@ -46,10 +37,8 @@ output:
 </div>
 
 
-
+</section>
 </div>
 
-
-
 <script src="https://d3js.org/d3.v6.min.js"></script>
-<script src="./script.js"></script>
+<script src="./script.js" defer></script>

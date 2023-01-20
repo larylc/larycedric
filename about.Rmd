@@ -1,86 +1,82 @@
 ---
-pagetitle: Learn More About Me
+pagetitle: About Me
 output:
   html_document:
     css: styles.css
 ---
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
 <link id="theme-style" rel= "stylesheet" href="light.css">
+<div class = "overall-container c-bio">
+<section class= "container about bio-section">
 
-<div class= "containers theme-bar">
-<p class= "theme-text"> Choose a website color palette:</p>
-<div class= "theme-holder">
-<div data-mode="light" class = "theme light"></div>
-<div data-mode="salmon" class = "theme salmon"></div>
-<div data-mode="sea" class = "theme sea"></div>
-<div data-mode="dark" class = "theme dark"></div>
+<div class="bar-animation-container">
+<svg class="svg6">
+<rect class = "one" ></rect>
+<rect class = "two"></rect>
+<rect class = "three"></rect>
+</svg>
+</div>
+
+<div class="bio-container">
+<h2 class= "about-header"> |My Story</h2>
+<p  class= "normal-text">I am a data analyst working @ Story Planet.</p>
+
+<p class= "normal-text">I started learning how to code while earning my BA in Biology and Education at Swarthmore College. I took a more serious interest in data science and became a DataCamp certified <a href= "https://www.datacamp.com/certificate/DA0022682718788"><span class= "bolded-text"> Professional Analyst</span></a>.</p>
+
+<p  class= "normal-text">I am really interested in information design, data journalism and storytelling, and business intelligence</p>
+
+
+<div class= "divider"></div>
+<h2  class= "about-header"> |I'm reading</h2>
+<div class= "button-holder2">
+<form action= "https://www.amazon.com/Data-Visualization-Handbook-Hilden-Koponen/dp/9526074491/ref=sr_1_1?crid=3VCB9B0AF4BV7&keywords=data+visualization+handbook+koponen&qid=1674098448&sprefix=data+visualization+handb%2Caps%2C78&sr=8-1"><button>Data Visualization Handbook: Koponen & Hilden</button></form>
+<form action= "https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals/dp/1119002257/ref=sr_1_1?crid=KH2AUI2LVFD3&keywords=storytelling+with+data&qid=1674098542&sprefix=storytelling%2Caps%2C86&sr=8-1"><button>Storytelling with Data: Nussbaumer Knaflic</button></form>
+<form action= "https://www.amazon.com/Functional-Art-introduction-information-visualization-ebook/dp/B0091SXDOM/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1668779647&sr=8-1"><button>Functional Art: Cario</button></form>
+<form action= "https://www.amazon.com/Thinking-Data-Turn-Information-Insights/dp/1449362931/ref=sr_1_1?crid=3STA24W8RXVUU&keywords=thinking+with+data&qid=1674098594&sprefix=thinking+with+dat%2Caps%2C86&sr=8-1"><button>Thinking with Data: Shron</button></form>
 </div>
 
 </div>
-<div class= "containers main2">
 
-<div class= "section2">
-<div id= "col1">
-<img  id= "img5" src="imgs/professional_pic.png">
+
+
+
+<div class= "page-design-container about-cont">
+<picture><img class= "pic cedric-pic" src="imgs/cedric_pic4.png"></picture>
+<div class= "bio-icons">
+<a href="https://github.com/larylc"><i class="fab fa-github social3"></i></a>
+<a href="https://www.linkedin.com/in/cedriclary/"><i class="fab fa-linkedin social3"></i></a>
+<a href="https://public.tableau.com/app/profile/cedric.lary"><i class="fas fa-link social3"></i></a>
 </div>
-
-<div id= "col2">
-<p>I started learning how to code while earning my BA in Biology and Education at Swarthmore College. While working as a  private tutor, I took a more serious interest in data science and started taking courses on <a class="datacamp-link" href="https://www.datacamp.com/" >DataCamp</a>. Now, I build projects in R, Python, and D3.js.</p>
-
-<div class= "footer-icons">
-  <a href="https://github.com/larylc"><i class="fab fa-github social2"></i></a>
-  <a href="https://www.linkedin.com/in/cedriclary/"><i class="fab fa-linkedin social2"></i></a>
-  <a href="https://larylc.github.io/Independent-Projects-/index.html"><i class="fas fa-link social2"></i></a>
-</div>
-  <p class ="arrow arrow2">﹀</p>
-</div>
-
+<div class = "page-design-holder">
+<div class= "page-design-line"></div>
+<h3 class= "page-design-info bio-info">Biography</h3>
 </div>
 </div>
 
+</section> 
 
-<div class= "containers main3">
-<div class= "section3">
 
-<div id="col3">
 
-<h2>Interests</h2>
-<div class = "tags"> 
-  <form action="https://loganlary.shinyapps.io/prodigies_app/?_ga=2.15136438.103236738.1633010249-569369622.1613318148">
-  <button class= "tag-button">Data Viz</button>
-  </form>
-  
-  <form action="https://larylc.github.io/Independent-Projects-/dreamworks_disney_pixar.html">
-  <button class= "tag-button">Data Journalism</button>
-  </form>
-  
-  <form action="index.html">
-  <button class= "tag-button">Front-End Development</button>
-  </form>
-  
-  <form action="https://larylc.github.io/chess_bdays_bplaces/">
-  <button class= "tag-button">Web-Scraping</button>
-  </form>
 
-  <form action= "#">
-  <button class= "tag-button">Education</button>
-  </form>
-  
-  <form action= "https://github.com/larylc/Summer-Research-2018/blob/main/Sigma%20Xi%20Research%20Poster%20Summer%202018%20Cedric%20Lary-%20Ultra.pdf">
-  <button class= "tag-button">Biology</button>
-  </form>
-
-</div>  
-
+<section class= "container about skill-section">
+<div class="bar-animation-container">
+<svg class="svg7">
+<rect class = "one" ></rect>
+<rect class = "two"></rect>
+<rect class = "three"></rect>
+</svg>
 </div>
 
+<div class= "skill-container">
+<h2 class= "about-header"> |Skills & Experiences</h2>
+<div class= "class-stat-holder">
+<p><span class= "stat-num">3</span> <span class= "stat-text"> DataCamp Tracks</span></p>
+<p><span class= "stat-num">37</span><span class= "stat-text"> DataCamp Courses</span></p>
+<p><span class= "stat-num">160</span><span class= "stat-text"> DataCamp Hours</span></p>
+</div>
 
+<a class="download-link" href="imgs/resume.pdf"><button class= "resume-button"><i class="fas fa-download"></i>Download Resume</button></a>
 
-<div id="col4" >
-<h2>Resume & Skills</h2>
-
- <a class="download-link" href="imgs/resume.pdf"><i class="fas fa-download"></i>Download Resume</a>
-  
 
 ```{r, out.width='100%', fig.align='center', message=FALSE, echo=FALSE, warning=FALSE}
 
@@ -90,7 +86,7 @@ library(highcharter)
 
 skills <- read_csv("C:/Users/laryl/Downloads/data_skills.csv")
 
-special_palette <-c("#1F2041", "#4B3F72", "#FFC857", "#4DA891", "#119DA4", "#19647E", "#417F95" )
+special_palette <-c("#FFD966", "#21C1BD" )
 
 my_theme <- hc_theme(
 chart = list(
@@ -102,7 +98,7 @@ chart = list(
 skills%>%
 hchart(
     "packedbubble", 
-    hcaes(value= Comfort,name = Skill, group = Tool)
+    hcaes(value= Comfort,name = Skill, group = General)
     )%>%
   hc_plotOptions(
     packedbubble = list(
@@ -123,23 +119,32 @@ hc_tooltip(
   ) %>%
   hc_colors(special_palette)%>%
   hc_add_theme(my_theme)%>%
-  hc_title(text = "Skills Across Different Tools")
+  hc_title(text = "Skills Visualized")
+
 
 
 
 ````
- 
- 
- 
- 
- 
- 
 
-</div>
-
-</div>
 
 </div>
 
 
-<script src="./script2.js"></script>
+<div class= "page-design-container">
+<div class = "page-design-holder">
+<div class= "page-design-line"></div>
+<h3 class= "page-design-info skill-experience-info">Skill & Experience</h3>
+</div>
+</div>
+
+</section> 
+
+</div>
+
+
+
+
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./script.js" defer></script>
