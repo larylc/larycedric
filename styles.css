@@ -723,7 +723,7 @@ Styles
 
 @media (max-width: 480px) {
 .giant-text{
-    font-size:6rem;
+    font-size:5rem;
   }
   nav a {
   font-size: 1rem;
