@@ -264,6 +264,8 @@ nav ul {
     list-style: none;
     display:flex;
     justify-content:space-between;
+    margin: 0 0;
+    padding: 0;
 }
 
 
@@ -708,5 +710,24 @@ Styles
     justify-content: center;
     flex-direction: column;
 }
+.download-link {
+  left: 25%;
+}
+
+.project-button {
+  left: 25%;
+}
 
 }
+
+
+@media (max-width: 480px) {
+  .giant-text{
+    font-size:7rem;
+  }
+  nav a {
+  font-size: 1rem;
+}
+}
+
+
