@@ -4,7 +4,9 @@
   --secondary-color-light: #D1F7F6;
 
   
-  --nav-color: #fff;
+  --nav-color: #000;
+  --nav-text: #fff;
+
 
   --normal-text-color: #D1F7F6;
   --bolded-text-color: #21C1BD;

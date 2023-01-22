@@ -12,6 +12,7 @@
 
   
   --nav-color: #fff;
+  --nav-text: #000;
 
   --normal-text-color: #6A6666;
   --bolded-text-color: #21C1BD;
@@ -104,6 +105,11 @@ font-size: 2rem
 
 .card-link{
   text-decoration: none !important;
+}
+
+.para2 .giant-text:hover{
+  color: #000;
+  background-color: #FFF2CC;
 }
 
 /*---------------
@@ -271,7 +277,7 @@ nav ul {
 
 nav a{
     text-decoration: none;
-    color: #000;
+    color: var(--nav-text);
     font-weight: 700;
     font-size: 1.5rem;
 
@@ -669,6 +675,12 @@ Styles
 .gallery-section::before {
   content: none;
 }
+
+
+.button-holder2 button {
+  width:100%;
+}
+
 
 @media (max-width: 920px) {
   .giant-text{

@@ -29,7 +29,8 @@ output:
 </p>
 
 <p class= "para2">
-<span class= "giant-text">collect, curate,  </span>
+<span class= "giant-text">collect, </span>
+<span class= "giant-text">curate,  </span>
 <span class= "normal-text">and </span>
 <span class= "giant-text">communicate </span>
 </p>
