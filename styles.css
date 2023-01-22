@@ -108,8 +108,8 @@ font-size: 2rem
 }
 
 .para2 .giant-text:hover{
-  color: #000;
-  background-color: #FFF2CC;
+  color: #fff;
+  background-color: var(--secondary-color-normal);
 }
 
 /*---------------
@@ -252,18 +252,18 @@ Navigation
  width: 100%;
  z-index: 15;
  margin: 0 auto;
- background: #fff;
+ background: var(--nav-color);
 }
   
 .nav-section {
-  background-color: #ffffff;
+  background-color: var(--nav-color);
   top: 0;
   z-index: 15;
 
 }
 
 nav {
-    background-color: #fff;
+    background-color: var(--nav-color);
 }
 
 nav ul {
@@ -353,10 +353,25 @@ Footer
     padding: 8px;
 }
 
+.social2 {
+    background-color: var(--nav-text);
+    border-radius: 30px;
+    color: var(--nav-color);
+    display: inline-block;
+    height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px;
+}
+
+
+
 .social3 {
-  background-color: #333;
+  background-color:var(--nav-text);
   border-radius: 25px;
-  color: #fff;
+  color: var(--nav-color);
   display: inline-block;
   height: 25px;
   margin: auto 2px;
@@ -367,21 +382,8 @@ Footer
 }
 
 
-.social2 {
-  background-color: #333;
-  border-radius: 60px;
-  color: #fff;
-  display: inline-block;
-  height: 60px;
-  margin: auto 6px;
-  width: 60px;
-  font-size: 30px;
-  text-align: center;
-  padding: 16px;
-}
 
-
-.social:hover, .social3:hover{
+.social:hover, .social2:hover, .social3:hover{
     background-color: var(--secondary-color-normal);
 }
 
