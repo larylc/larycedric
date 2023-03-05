@@ -71,8 +71,8 @@ output:
 <h2 class= "about-header"> |Skills & Experiences</h2>
 <div class= "class-stat-holder">
 <p><span class= "stat-num">3</span> <span class= "stat-text"> DataCamp Tracks</span></p>
-<p><span class= "stat-num">50</span><span class= "stat-text"> DataCamp Courses</span></p>
-<p><span class= "stat-num">206</span><span class= "stat-text"> DataCamp Hours</span></p>
+<p><span class= "stat-num">51</span><span class= "stat-text"> DataCamp Courses</span></p>
+<p><span class= "stat-num">202</span><span class= "stat-text"> DataCamp Hours</span></p>
 </div>
 
 <a class="download-link" href="imgs/resume.pdf"><button class= "resume-button"><i class="fas fa-download"></i>Download Resume</button></a>
