@@ -23,7 +23,7 @@ output:
 
 <p class= "normal-text">I started learning how to code while earning my BA in Biology and Education at Swarthmore College. I took a more serious interest in data science and became a DataCamp certified <a href= "https://www.datacamp.com/certificate/DA0022682718788"><span class= "bolded-text"> Professional Analyst</span></a>. I am also a member of the <a href= "https://www.datavisualizationsociety.org/"><span class= "bolded-text"> Data Visualization Society</span></a>.</p> 
 
-<p  class= "normal-text">I am really interested in information design, data journalism and storytelling, and business intelligence.</p>
+<p  class= "normal-text">I'm passionate about information design, data journalism and storytelling, and business intelligence.</p>
 
 
 <div class= "divider"></div>
