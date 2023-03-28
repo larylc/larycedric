@@ -39,7 +39,7 @@ output:
 <picture><img  class= "pic select-pic" src="imgs/sql_map1.png"></picture>
 <div class="card-description">
   <h4 class= "card-heading">Investigating California High School Closures</h4>
-  <p class= "card-info">Exploratory Analysis examining factors that are associated with California high school closures.</p>
+  <p class= "card-info">Exploratory analysis examining factors that are associated with California high school closures.</p>
   <p class= "card-tags">SQL, R, Python</p>
 </div>
 </div>
