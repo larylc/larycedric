@@ -19,11 +19,11 @@ output:
 
 <div class="bio-container">
 <h2 class= "about-header"> |My Story</h2>
-<p  class= "normal-text">I am a data analyst working @ Story Planet.</p>
+<p  class= "normal-text">I am a data analyst working @ <a href= "https://storyplanet.ca/"><span class= "bolded-text"> Story Planet.</span></a></p>
 
-<p class= "normal-text">I started learning how to code while earning my BA in Biology and Education at Swarthmore College. I took a more serious interest in data science and became a DataCamp certified <a href= "https://www.datacamp.com/certificate/DA0022682718788"><span class= "bolded-text"> Professional Analyst</span></a>.</p>
+<p class= "normal-text">I started learning how to code while earning my BA in Biology and Education at Swarthmore College. I took a more serious interest in data science and became a DataCamp certified <a href= "https://www.datacamp.com/certificate/DA0022682718788"><span class= "bolded-text"> Professional Analyst</span></a>. I am also a member of the <a href= "https://www.datavisualizationsociety.org/"><span class= "bolded-text"> Data Visualization Society</span></a>.</p> 
 
-<p  class= "normal-text">I am really interested in information design, data journalism and storytelling, and business intelligence</p>
+<p  class= "normal-text">I am really interested in information design, data journalism and storytelling, and business intelligence.</p>
 
 
 <div class= "divider"></div>
@@ -70,9 +70,9 @@ output:
 <div class= "skill-container">
 <h2 class= "about-header"> |Skills & Experiences</h2>
 <div class= "class-stat-holder">
-<p><span class= "stat-num">3</span> <span class= "stat-text"> DataCamp Tracks</span></p>
-<p><span class= "stat-num">51</span><span class= "stat-text"> DataCamp Courses</span></p>
-<p><span class= "stat-num">202</span><span class= "stat-text"> DataCamp Hours</span></p>
+<p><span class= "stat-num">4</span> <span class= "stat-text"> DataCamp Tracks</span></p>
+<p><span class= "stat-num">52</span><span class= "stat-text"> DataCamp Courses</span></p>
+<p><span class= "stat-num">206</span><span class= "stat-text"> DataCamp Hours</span></p>
 </div>
 
 <a class="download-link" href="imgs/resume.pdf"><button class= "resume-button"><i class="fas fa-download"></i>Download Resume</button></a>

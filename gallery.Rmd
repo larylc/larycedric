@@ -37,6 +37,12 @@ output:
 </div>
 
 
+<div class= 'gallery-pic'>
+<a href="https://public.tableau.com/app/profile/cedric.lary/viz/CollegeFinancesOverYears/CostDebtandEarnings">
+<img  id= "img10" src="imgs/tableau_college_finances.png">
+</a>
+</div>
+
 </section>
 </div>
 

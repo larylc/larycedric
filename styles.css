@@ -548,13 +548,31 @@ Styles
   border: none;
 }
 
-.project-card:hover{
+.project-card2 {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top:10px;
+  box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.6);
+  border: none;
+}
+
+
+.project-card:hover, .project-card2:hover{
   transition: all 0.5s ease-in-out;
   box-shadow: 0 10px 12px hsl(0deg 0% 0% / 0.7);
   text-decoration: none;
   filter: brightness(1.1);
   transform: scale(1.05);
 }
+
+
+
+
+
+
 
 
 .card-description {
@@ -652,12 +670,12 @@ Styles
   margin-bottom: 20px;
 }
 
-#img6, #img7, #img8, #img9{
+#img6, #img7, #img8, #img9, #img10{
  width: 300px;
 }
 
 
-#img6:hover, #img7:hover, #img8:hover, #img9:hover  {
+#img6:hover, #img7:hover, #img8:hover, #img9:hover, #img10:hover  {
   transition: all 0.5s ease-in-out;
   transform: scale(1.05);
   filter: brightness(1.05);
@@ -677,6 +695,11 @@ Styles
 
 .gallery-section::before {
   content: none;
+}
+
+.project-card-holder {
+  display: grid;
+  grid-auto-flow: column;
 }
 
 
@@ -720,7 +743,7 @@ Styles
     font-size: 15px;
     padding: 16px;
 }
-.gallery-section{
+.gallery-section, .project-card-holder{
     display: flex;
     justify-content: center;
     flex-direction: column;

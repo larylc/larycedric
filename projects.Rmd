@@ -22,8 +22,9 @@ output:
 <span class= "project-num"> 2023</span>
 </h2>
 
+<div class= "project-card-holder">
 <a class= "card-link" href="https://loganlary.shinyapps.io/shiny_college_app/">
-<div class= "project-card">
+<div class= "project-card2">
 <picture><img  class= "pic select-pic" src="imgs/college_dash.png"></picture>
 <div class="card-description">
   <h4 class= "card-heading">Everything College Dashboard</h4>
@@ -32,6 +33,21 @@ output:
 </div>
 </div>
 </a>
+
+<a class= "card-link" href="https://larylc.github.io/lary_sql_projects/sql_project1.html">
+<div class= "project-card2">
+<picture><img  class= "pic select-pic" src="imgs/sql_map1.png"></picture>
+<div class="card-description">
+  <h4 class= "card-heading">Investigating California High School Closures</h4>
+  <p class= "card-info">Exploratory Analysis examining factors that are associated with California high school closures.</p>
+  <p class= "card-tags">SQL, R, Python</p>
+</div>
+</div>
+</a>
+</div>
+
+
+
 
 <div class= "divider"> </div>
 
