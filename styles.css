@@ -134,7 +134,7 @@ html{
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  height: 10%;
+  height: 100%;
 
 }
 
@@ -338,6 +338,7 @@ Footer
 
 .c-contact{
   position: absolute;
+  height: 10%;
 }
 
 .footer-icons, .bio-icons{

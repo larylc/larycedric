@@ -21,7 +21,7 @@ output:
 <h2 class= "about-header"> |My Story</h2>
 <p  class= "normal-text">I am a data analyst working @ <a href= "https://storyplanet.ca/"><span class= "bolded-text"> Story Planet.</span></a></p>
 
-<p class= "normal-text">I started learning how to code while earning my BA in Biology and Education at Swarthmore College. I took a more serious interest in data science and became a DataCamp certified <a href= "https://www.datacamp.com/certificate/DS0028178960878"><span class= "bolded-text"> Professional Data Scientist</span></a>. I am also a volunteer at the <a href= "https://www.datavisualizationsociety.org/"><span class= "bolded-text"> Data Visualization Society</span></a>.</p> 
+<p class= "normal-text">I started learning how to code while earning my BA in Biology and Education at Swarthmore College. I took a more serious interest in data science and became a DataCamp certified <a href= "https://www.datacamp.com/certificate/DS0028178960878"><span class= "bolded-text"> Professional Data Scientist</span></a>. I am also a volunteer at the <a href= "https://www.datavisualizationsociety.org/"><span class= "bolded-text"> Data Visualization Society</span></a>.</p>  
 
 <p  class= "normal-text">I'm passionate about information design, data journalism and storytelling, and business intelligence.</p>
 
@@ -84,7 +84,7 @@ output:
 library(tidyverse)
 library(highcharter)
 
-skills <- read_csv("C:/Users/laryl/Downloads/data_skills.csv")
+skills <- read_csv("C:/Users/laryl/Documents/data_work/personal_data/data_skills.csv")
 
 special_palette <-c("#FFD966", "#21C1BD" )
 
