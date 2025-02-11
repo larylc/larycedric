@@ -37,7 +37,7 @@ output:
 </div>
 </div>
 </a>
-<a class= "card-link" href=https://github.com/larylc/Gallery-Visualizations#seasonal-births-of-grandmasters-vs-general-population-r">
+<a class= "card-link" href="https://github.com/larylc/Gallery-Visualizations#seasonal-births-of-grandmasters-vs-general-population-r">
 <div class= "project-card">
 <picture><img  class= "pic select-pic" src="imgs/image_seasonbirths.png"></picture>
 <div class="card-description">
