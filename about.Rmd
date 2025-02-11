@@ -4,147 +4,67 @@ output:
   html_document:
     css: styles.css
 ---
+<div class="about-info">
+  <div class="header-container">
+  <h1 class="about-header">Hi, I'm Cedric</h1>
+<div class="bar-animation-container">
+  <svg class="svg">
+    <rect class="one"></rect>
+    <rect class="two"></rect>
+    <rect class="three"></rect>
+  </svg>
+  </div>
+  </div>
+  <section class="about-text-section">
+    <p class="about-text">
+      I'm a data analyst working at 
+      <a href="https://storyplanet.ca/"><span class="highlight-text">Story Planet</span></a>
+      and a volunteer for the 
+      <a href="https://www.datavisualizationsociety.org/ecc"><span class="highlight-text">Data Visualization Society</span></a>.
+    </p>
 
-<link id="theme-style" rel= "stylesheet" href="light.css">
-<div class = "overall-container c-bio">
-<section class= "container about bio-section">
+  <p class="about-text">
+      I started learning how to code while earning my BA in Biology and Education at Swarthmore College.
+  </p>
+    
+  <p class="about-text">
+      I then became a DataCamp certified <a href="https://www.datacamp.com/certificate/DS0028178960878"><span class="highlight-text">Professional Data Scientist</span></a>.
+    </p>
+  </section>
+
+  <section class="about-text-section">
+    <p class="about-text">
+      Check out my DataCamp portfolio to see my 
+      <span class="highlight-text">90 completed courses</span> and 
+      <span class="highlight-text">341 hours</span> of data learning:
+    </p>
+    
+  <div class="button-container">
+  <a class="about-link" href="https://www.datacamp.com/portfolio/cedriclary1">
+        <button class="about-button"><i class="fas fa-laptop-code"></i> View DataCamp Portfolio</button>
+  </a>
+  </div>
+  </section>
+
+  <section class="about-text-section">
+    <p class="about-text">Or, you can read my resume:</p>
+
+  <div class="button-container">
+  <a class="about-link" href="imgs/resume.pdf">
+        <button class="about-button"><i class="fas fa-download"></i> Download Resume</button>
+  </a>
+  </div>
+  </section>
+</div>
+
 
 <div class="bar-animation-container">
-<svg class="svg6">
+<svg class="svg">
 <rect class = "one" ></rect>
 <rect class = "two"></rect>
 <rect class = "three"></rect>
 </svg>
 </div>
-
-<div class="bio-container">
-<h2 class= "about-header"> |My Story</h2>
-<p  class= "normal-text">I am a data analyst working @ <a href= "https://storyplanet.ca/"><span class= "bolded-text"> Story Planet.</span></a></p>
-
-<p class= "normal-text">I started learning how to code while earning my BA in Biology and Education at Swarthmore College. I took a more serious interest in data science and became a DataCamp certified <a href= "https://www.datacamp.com/certificate/DS0028178960878"><span class= "bolded-text"> Professional Data Scientist</span></a>. I am also a volunteer at the <a href= "https://www.datavisualizationsociety.org/"><span class= "bolded-text"> Data Visualization Society</span></a>.</p>  
-
-<p  class= "normal-text">I'm passionate about information design, data journalism and storytelling, and business intelligence.</p>
-
-
-<div class= "divider"></div>
-<h2  class= "about-header"> |I'm reading</h2>
-<div class= "button-holder2">
-<form action= "https://www.amazon.com/Data-Visualization-Handbook-Hilden-Koponen/dp/9526074491/ref=sr_1_1?crid=3VCB9B0AF4BV7&keywords=data+visualization+handbook+koponen&qid=1674098448&sprefix=data+visualization+handb%2Caps%2C78&sr=8-1"><button>Data Visualization Handbook: Koponen & Hilden</button></form>
-<form action= "https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals/dp/1119002257/ref=sr_1_1?crid=KH2AUI2LVFD3&keywords=storytelling+with+data&qid=1674098542&sprefix=storytelling%2Caps%2C86&sr=8-1"><button>Storytelling with Data: Nussbaumer Knaflic</button></form>
-<form action= "https://www.amazon.com/Functional-Art-introduction-information-visualization-ebook/dp/B0091SXDOM/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1668779647&sr=8-1"><button>Functional Art: Cario</button></form>
-<form action= "https://www.amazon.com/Thinking-Data-Turn-Information-Insights/dp/1449362931/ref=sr_1_1?crid=3STA24W8RXVUU&keywords=thinking+with+data&qid=1674098594&sprefix=thinking+with+dat%2Caps%2C86&sr=8-1"><button>Thinking with Data: Shron</button></form>
-</div>
-
-</div>
-
-
-
-
-<div class= "page-design-container about-cont">
-<picture><img class= "pic cedric-pic" src="imgs/cedric_pic4.png"></picture>
-<div class= "bio-icons">
-<a href="https://github.com/larylc"><i class="fab fa-github social3"></i></a>
-<a href="https://www.linkedin.com/in/cedriclary/"><i class="fab fa-linkedin social3"></i></a>
-<a href="https://public.tableau.com/app/profile/cedric.lary"><i class="fas fa-link social3"></i></a>
-</div>
-<div class = "page-design-holder">
-<div class= "page-design-line"></div>
-<h3 class= "page-design-info bio-info">Biography</h3>
-</div>
-</div>
-
-</section> 
-
-
-
-
-<section class= "container about skill-section">
-<div class="bar-animation-container">
-<svg class="svg7">
-<rect class = "one" ></rect>
-<rect class = "two"></rect>
-<rect class = "three"></rect>
-</svg>
-</div>
-
-<div class= "skill-container">
-<h2 class= "about-header"> |Skills & Experiences</h2>
-<div class= "class-stat-holder">
-<p><span class= "stat-num">4</span> <span class= "stat-text"> DataCamp Tracks</span></p>
-<p><span class= "stat-num">52</span><span class= "stat-text"> DataCamp Courses</span></p>
-<p><span class= "stat-num">206</span><span class= "stat-text"> DataCamp Hours</span></p>
-</div>
-
-<a class="download-link" href="imgs/resume.pdf"><button class= "resume-button"><i class="fas fa-download"></i>Download Resume</button></a>
-
-
-```{r, out.width='100%', fig.align='center', message=FALSE, echo=FALSE, warning=FALSE}
-
-
-library(tidyverse)
-library(highcharter)
-
-skills <- read_csv("C:/Users/laryl/Documents/data_work/personal_data/data_skills.csv")
-
-special_palette <-c("#FFD966", "#21C1BD" )
-
-my_theme <- hc_theme(
-chart = list(
-      backgroundColor = "transparent",
-      style = list(
-      fontFamily = "Libre Baskerville"
-      )))
-
-skills%>%
-hchart(
-    "packedbubble", 
-    hcaes(value= Comfort,name = Skill, group = General)
-    )%>%
-  hc_plotOptions(
-    packedbubble = list(
-
-      layoutAlgorithm = list(
-        gravitationalConstant =  0.07,
-        bubblePadding = 8,
-        splitSeries = TRUE,
-        seriesInteraction = FALSE,
-        dragBetweenSeries = FALSE,
-        maxIterations = 500
-      )
-    )
-  )%>%
-hc_tooltip(
-    headerFormat = "",
-    pointFormat = "<b>{point.Tool}:</b> {point.name}"
-  ) %>%
-  hc_colors(special_palette)%>%
-  hc_add_theme(my_theme)%>%
-  hc_title(text = "Skills Visualized")
-
-
-
-
-````
-
-
-</div>
-
-
-<div class= "page-design-container">
-<div class = "page-design-holder">
-<div class= "page-design-line"></div>
-<h3 class= "page-design-info skill-experience-info">Skill & Experience</h3>
-</div>
-</div>
-
-</section> 
-
-</div>
-
-
-
-
-
 
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="./script.js" defer></script>

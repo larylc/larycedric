@@ -11,7 +11,7 @@
 
 
 
-<title>Cedric Lary</title>
+<title>Projects</title>
 
 <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -232,27 +232,17 @@ $(document).ready(function () {
 
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<header class="nav-section">
+      <nav>
+          <ul class="nav-list">
+              <li class="nav-item"><a href="projects.html">Cedric's Projects</a></li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+          </ul>
+      </nav>
+</header>
 
-
-<div class = "overall-container c-nav">
-<section class = "container nav-section">
-  <nav> 
-        <ul>
-            <li class= "nav-item nav-about nav-other"><a href="projects.html">Projects</a></li>
-            <li class= "nav-item nav-about nav-other"><a href="about.html">About</a></li>
-            <li class= "nav-item nav-me"><a href="index.html">Cedric</a></li>
-            <li class= "nav-item nav-gallery nav-other"><a href="gallery.html">Gallery</a></li>
-            <li class= "nav-widget">
-              <div class= "theme-holder">
-                <i data-mode="light" class="fas fa-sun social2 theme"></i>
-                <i data-mode="dark" class="fas fa-moon social2 theme"></i>
-              </div>
-            </li>
-        </ul>
-  </nav>
-</section>
-</div>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="./script.js" defer></script>
 
 <div id="header">
 
@@ -262,144 +252,10 @@ $(document).ready(function () {
 </div>
 
 
-<p><link id="theme-style" rel= "stylesheet" href="light.css"></p>
-<div class="overall-container c-hero">
-<section class="container index hero-section">
-<div class="bar-animation-container">
-<svg class="svg">
-<rect class = "one"></rect> <rect class = "two"></rect>
-<rect class = "three"></rect>
-</svg>
-</div>
-<div class="message-container">
-<p class="para1">
-<span class="normal-text">Hi, my name is </span> <span
-class="bolded-text">Cedric</span> <span class="normal-text">. I’m a
-</span> <span class="bolded-text">data analyst </span> <span
-class="normal-text">that can help you <br></span>
-</p>
-<p class="para2">
-<span class="giant-text">collect, </span> <span
-class="giant-text">curate, </span> <span class="normal-text">and </span>
-<span class="giant-text">communicate </span>
-</p>
-<p class="para3">
-<span class="normal-text">your </span> <span
-class="bolded-text">data.</span>
-</p>
-<div class="button-container">
-<form action="about.html">
-<button class="learn-button">
-about me
-</button>
-</form>
-<form action="projects.html">
-<button class="see-projects-button">
-see projects
-</button>
-</form>
-</div>
-<p class="arrow arrow1">
-﹀
-</p>
-</div>
-<div class="page-design-container">
-<div class="page-design-holder">
-<div class="page-design-line">
-
-</div>
-<h3 class="page-design-info datacamp-info">
-DataCamp Certified Analyst
-</h3>
-</div>
-</div>
-</section>
-</div>
-<div class = "overall-container c-services">
-<section class= "container index services-section">
-<div class="bar-animation-container">
-<svg class="svg2">
-<rect class = "one" ></rect> <rect class = "two"></rect>
-<rect class = "three"></rect>
-</svg>
-</div>
-<div class= "service-container">
-
-<div class= "service-col1">
-<h2 class="service-header">
-<span class="service-num">01</span> <span class="service-rest">| Data
-Management</span>
-</h2>
-<p class= "service-paragraph">
-I gather data using tools like <span class="bolded-text">Excel/Google
-Sheets</span>, web scraping, and <span class="bolded-text">SQL</span> .
-I reshape and mine data for analysis using <span
-class="bolded-text">R</span> and <span class="bolded-text">Python</span>
-.
-<p>
-</div>
-<div class="service-col2">
-<p class="arrow service-arrow">
-→
-</p>
-</div>
-<div class= "service-col1">
-<h2 class="service-header">
-<span class="service-num">02</span> <span class="service-rest">| Data
-Analysis</span>
-</h2>
-<p class= "service-paragraph">
-I perform data analysis, exploration, and apply statistical tests using
-<span class="bolded-text">R</span> and <span
-class="bolded-text">Python</span>.
-<p>
-<p class="arrow arrow1">
-﹀
-</p>
-</div>
-<div class="service-col2">
-<p class="arrow service-arrow">
-→
-</p>
-</div>
-<div class="service-col1">
-<h2 class="service-header">
-<span class="service-num">03</span> <span class="service-rest">| Data
-Storytelling</span>
-</h2>
-<p class= "service-paragraph">
-I use static and interactive visualizations generated from tools like
-<span class="bolded-text">Tableau</span> and <span
-class="bolded-text">Shiny</span>, to tell compelling stories that
-communicate key insights.
-<p>
-</div>
-</div>
-<div class="page-design-container">
-<div class="page-design-holder">
-<div class="page-design-line">
-
-</div>
-<h3 class="page-design-info process-info">
-Data Process
-</h3>
-</div>
-</div>
-</section>
-</div>
-<div class="overall-container c-selected">
-<section class="container index selected-section">
-<div class="bar-animation-container">
-<svg class="svg3">
-<rect class = "one" ></rect> <rect class = "two"></rect>
-<rect class = "three"></rect>
-</svg>
-</div>
-<div class="selected-container">
-<div class="selected-holder1">
+<div class="project-card-holder">
 <a class= "card-link" href="https://loganlary.shinyapps.io/shiny_college_app/">
 <div class="project-card">
-<picture><img  class= "pic select-pic" src="imgs/college_dash.png"></picture>
+<picture><img  class= "pic select-pic" src="imgs/image_collegeshiny.png"></picture>
 <div class="card-description">
 <h4 class="card-heading">
 Everything College Dashboard
@@ -412,74 +268,141 @@ R, Python, Shiny
 </p>
 </div>
 </div>
-<p></a></p>
-<p class="selected-paragraph">
-This is a dashboard that combines the shiny package along with
-interactive data visualization packages like <span
-class="bolded-text">highcharter</span> and <span
-class="bolded-text">plotly</span> to allow users to compare any 2
-colleges at once. The Everything College Dashboard also showcases <span
-class="bolded-text">dozens of variables</span> with the option to see
-how they have changed over <span class="bolded-text">time</span>.
+</a>
+<a class= "card-link" href="https://github.com/larylc/Gallery-Visualizations#what-125-years-of-temperatures-tell-us-about-weather-r">
+<div class="project-card">
+<picture><img  class= "pic select-pic" src="imgs/image_njweather.png"></picture>
+<div class="card-description">
+<h4 class="card-heading">
+NJ Monthly Average Low and Average High Temperatures For Each Year
+</h4>
+<p class="card-info">
+Graph showing NJ lows and highs from 1895-2022.
+</p>
+<p class="card-tags">
+R, Python
 </p>
 </div>
-<div class="selected-holder2">
-<form action="projects.html">
-<button class="project-button">
-more projects
-</button>
-</form>
+</div>
+</a>
+<a class= "card-link" href="https://github.com/larylc/Gallery-Visualizations#percentiles-reveal-super-grandmaster-specialties-r">
+<div class="project-card">
+<picture><img  class= "pic select-pic" src="imgs/image_supergm.png"></picture>
+<div class="card-description">
+<h4 class="card-heading">
+Rating Percentiles Reveal Super Grandmaster Time Control Specialties
+</h4>
+<p class="card-info">
+Comparison of top grandmaster ratings using average percentiles.
+</p>
+<p class="card-tags">
+R, Python
+</p>
 </div>
 </div>
-<div class="page-design-container">
-<div class="page-design-holder">
-<div class="page-design-line">
-
+</a>
+<a class= "card-link" href=https://github.com/larylc/Gallery-Visualizations#seasonal-births-of-grandmasters-vs-general-population-r">
+<div class="project-card">
+<picture><img  class= "pic select-pic" src="imgs/image_seasonbirths.png"></picture>
+<div class="card-description">
+<h4 class="card-heading">
+Seasonal Births of Chess Grandmasters vs General Population
+</h4>
+<p class="card-info">
+Dashboard for comparing US colleges side by side.
+</p>
+<p class="card-tags">
+R, Python
+</p>
 </div>
-<h3 class="page-design-info selected-info">
-Selected Project
-</h3>
+</div>
+</a>
+<a class= "card-link" href="https://github.com/larylc/Gallery-Visualizations#who-do-we-see-attending-need-blind-colleges-r">
+<div class="project-card">
+<picture><img  class= "pic select-pic" src="imgs/image_nbcolleges.png"></picture>
+<div class="card-description">
+<h4 class="card-heading">
+Who Do We See Attending Need Blind Colleges
+</h4>
+<p class="card-info">
+Visualization showing trends in racial groups across need-blind and
+other colleges.
+</p>
+<p class="card-tags">
+R
+</p>
 </div>
 </div>
-</section>
+</a>
+<a class= "card-link" href="https://loganlary.shinyapps.io/prodigy_pathway/">
+<div class="project-card">
+<picture><img  class= "pic select-pic" src="imgs/image_prodigy.png"></picture>
+<div class="card-description">
+<h4 class="card-heading">
+Pathway to Prodigy
+</h4>
+<p class="card-info">
+Compare prodigies by age from 1970s-2021
+</p>
+<p class="card-tags">
+R, Python
+</p>
+</div>
+</div>
+</a>
+<a class= "card-link" href="https://public.tableau.com/app/profile/cedric.lary/viz/CollegeFinancesOverYears/CostDebtandEarnings">
+<div class="project-card">
+<picture><img  class= "pic select-pic" src="imgs/image_tableau.png"></picture>
+<div class="card-description">
+<h4 class="card-heading">
+College Finances Over Years
+</h4>
+<p class="card-info">
+Dashboard comparing cost, debt, earnings across US states.
+</p>
+<p class="card-tags">
+R, Tableau
+</p>
+</div>
+</div>
+</a>
+<a class= "card-link" href="https://larylc.github.io/lary_sql_projects/sql_project1.html">
+<div class="project-card">
+<picture><img  class= "pic select-pic" src="imgs/image_sqlmap.png"></picture>
+<div class="card-description">
+<h4 class="card-heading">
+Investigating California High School Closures
+</h4>
+<p class="card-info">
+Exploratory analysis examining factors that are associated with
+California high school closures.
+</p>
+<p class="card-tags">
+SQL, R, Python
+</p>
+</div>
+</div>
+</a>
+<a class= "card-link" href="https://larylc.github.io/chess_bdays_bplaces">
+<div class="project-card">
+<picture><img  class= "pic select-pic" src="imgs/image_missingbirthdates.png"></picture>
+<div class="card-description">
+<h4 class="card-heading">
+Grandmaster B-days and B-places
+</h4>
+<p class="card-info">
+Gathering as many chess grandmaster birthdates and birthplaces using
+web-scraping tools.
+</p>
+<p class="card-tags">
+R, Python
+</p>
+</div>
+</div>
+<p></a></p>
 </div>
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="./script.js" defer></script>
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
-<div class = "overall-container c-contact">
-<section class= "container footer-section">
-  <div class="bar-animation-container">
-    <svg class="svg4">
-    <rect class = "one" ></rect>
-    <rect class = "two"></rect>
-    <rect class = "three"></rect>
-    </svg>
-  </div>
-  
-  <div class="contact-container">
-    <div class= "footer-icons">
-      <a href="https://github.com/larylc"><i class="fab fa-github social"></i></a>
-      <a href="https://www.linkedin.com/in/cedriclary/"><i class="fab fa-linkedin social"></i></a>
-      <a href="https://public.tableau.com/app/profile/cedric.lary"><i class="fas fa-link social"></i></a>
-    </div>
-    <p class= "footer-text">This website was made using RMarkdown.</p>
-  </div>
-
-
-  <div class= "page-design-container">
-    <div class = "page-design-holder">
-      <div class= "page-design-line"></div>
-      <h3 class= "page-design-info contact-info" >Contact</h2>
-    </div>  
-  </div>
-  
-</section>
-</div>
-
 
 
 

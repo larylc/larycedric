@@ -5,4 +5,3 @@ output:
     css: styles.css
     includes:
       in_header: favicon.html
-      after_body: footer.html
